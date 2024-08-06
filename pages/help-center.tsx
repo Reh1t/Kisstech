@@ -36,7 +36,7 @@ const HelpCenter: NextPage = () => {
         helpMinWidth="36px"
       />
       <section className="self-stretch bg-main-background overflow-hidden flex flex-col items-center justify-start py-[60px] px-5 box-border gap-5 max-w-full text-left text-37xl text-variant-background font-heading-2">
-        <div className="flex flex-row items-center justify-center py-0 px-[267px] box-border gap-9 max-w-full lg:flex-wrap lg:pl-[133px] lg:pr-[133px] lg:box-border mq450:pl-5 mq450:pr-5 mq450:box-border gap-[18px] mq750:pl-[66px] mq750:pr-[66px] mq750:box-border">
+        <div className="flex flex-row items-center justify-center py-0 px-[267px] box-border gap-9 max-w-full lg:flex-wrap lg:pl-[133px] lg:pr-[133px] lg:box-border mq450:pl-5 mq450:pr-5 mq450:box-border mq750:pl-[66px] mq750:pr-[66px] mq750:box-border">
           <div className="h-10 w-[241px] flex flex-col items-start justify-start py-5 px-0 box-border">
             <div className="self-stretch h-px relative border-border-2 border-t-[1px] border-solid box-border" />
           </div>

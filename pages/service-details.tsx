@@ -50,7 +50,7 @@ const ServiceDetails: NextPage = () => {
         helpMinWidth="36px"
       />
       <section className="self-stretch bg-main-background overflow-hidden flex flex-col items-center justify-start py-[60px] px-5 box-border gap-5 max-w-full text-left text-37xl text-variant-background font-heading-2 mq450:pt-[39px] mq450:pb-[39px] mq450:box-border">
-        <div className="flex flex-row items-center justify-center py-0 px-[220px] box-border gap-10 max-w-full lg:flex-wrap lg:pl-[110px] lg:pr-[110px] lg:box-border gap-5 mq825:pl-[55px] mq825:pr-[55px] mq825:box-border mq450:pl-5 mq450:pr-5 mq450:box-border">
+        <div className="flex flex-row items-center justify-center py-0 px-[220px] box-border gap-10 max-w-full lg:flex-wrap lg:pl-[110px] lg:pr-[110px] lg:box-border mq825:pl-[55px] mq825:pr-[55px] mq825:box-border mq450:pl-5 mq450:pr-5 mq450:box-border">
           <div className="h-10 w-[241px] flex flex-col items-start justify-start py-5 px-0 box-border">
             <div className="self-stretch h-px relative border-border-2 border-t-[1px] border-solid box-border" />
           </div>
@@ -228,7 +228,7 @@ const ServiceDetails: NextPage = () => {
       />
       <ServiceDetailRight />
       <section className="self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-start justify-center py-20 px-5 box-border max-w-full text-left text-mid text-secondary font-heading-2 lg:pt-[52px] lg:pb-[52px] lg:box-border mq450:pt-[34px] mq450:pb-[34px] mq450:box-border">
-        <div className="w-[1240px] flex flex-row flex-wrap items-start justify-start gap-[60px] min-h-[689px] max-w-full gap-[30px]">
+        <div className="w-[1240px] flex flex-row flex-wrap items-start justify-start gap-[60px] min-h-[689px] max-w-full">
           <div className="w-[518px] flex flex-row flex-wrap items-start justify-start py-0 pl-0 pr-[9px] box-border min-h-[78px] max-w-full">
             <div className="relative tracking-[0.15em] leading-[120%] uppercase font-medium shrink-0">
               Other Services
@@ -305,7 +305,7 @@ const ServiceDetails: NextPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-[550px] rounded-3xs bg-main-background border-border-1 border-[1px] border-solid box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-3 px-[49px] gap-9 max-w-full mq825:flex-wrap gap-[18px] mq825:pl-6 mq825:pr-6 mq825:box-border">
+              <div className="w-[550px] rounded-3xs bg-main-background border-border-1 border-[1px] border-solid box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-3 px-[49px] gap-9 max-w-full mq825:flex-wrap mq825:pl-6 mq825:pr-6 mq825:box-border">
                 <div className="rounded-8xs bg-variant-background overflow-hidden flex flex-row items-center justify-start py-[34px] px-7">
                   <img
                     className="h-5 w-[18px] relative"

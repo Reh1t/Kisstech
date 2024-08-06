@@ -8,7 +8,7 @@ export type WhyUsType = {
 const WhyUs: NextPage<WhyUsType> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch bg-variant-background overflow-hidden flex flex-row items-start justify-center py-11 px-[100px] box-border gap-16 max-w-full text-left text-mid text-border-1 font-heading-2 gap-8 mq800:pl-[50px] mq800:pr-[50px] mq800:box-border gap-4 mq450:p-5 mq450:box-border mq1125:flex-wrap mq1125:pt-[29px] mq1125:pb-[29px] mq1125:box-border ${className}`}
+      className={`self-stretch bg-variant-background overflow-hidden flex flex-row items-start justify-center py-11 px-[100px] box-border gap-16 max-w-full text-left text-mid text-border-1 font-heading-2 mq800:pl-[50px] mq800:pr-[50px] mq800:box-border mq450:p-5 mq450:box-border mq1125:flex-wrap mq1125:pt-[29px] mq1125:pb-[29px] mq1125:box-border ${className}`}
     >
       <div className="w-[516px] flex flex-col items-start justify-start pt-[73.5px] px-0 pb-0 box-border min-w-[516px] max-w-full mq800:pt-12 mq800:box-border mq800:min-w-full mq1125:flex-1">
         <div className="self-stretch flex flex-col items-start justify-start gap-16 max-w-full">

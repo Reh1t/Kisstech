@@ -8,9 +8,9 @@ export type FaqsType = {
 const Faqs: NextPage<FaqsType> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch bg-white overflow-hidden flex flex-col items-center justify-center py-[120px] px-5 box-border gap-20 max-w-full text-left text-mid text-secondary font-heading-2 gap-10 gap-5 mq750:pt-[51px] mq750:pb-[51px] mq750:box-border mq1050:pt-[78px] mq1050:pb-[78px] mq1050:box-border ${className}`}
+      className={`self-stretch bg-white overflow-hidden flex flex-col items-center justify-center py-[120px] px-5 box-border gap-20 max-w-full text-left text-mid text-secondary font-heading-2 mq750:pt-[51px] mq750:pb-[51px] mq750:box-border mq1050:pt-[78px] mq1050:pb-[78px] mq1050:box-border ${className}`}
     >
-      <div className="w-[1140px] flex flex-row flex-wrap items-center justify-center py-0 pl-0 pr-[329px] box-border gap-10 max-w-full lg:pr-[164px] lg:box-border gap-5 mq750:pr-[82px] mq750:box-border mq450:pr-5 mq450:box-border">
+      <div className="w-[1140px] flex flex-row flex-wrap items-center justify-center py-0 pl-0 pr-[329px] box-border gap-10 max-w-full lg:pr-[164px] lg:box-border mq750:pr-[82px] mq750:box-border mq450:pr-5 mq450:box-border">
         <div className="h-px w-[291px] relative border-border-2 border-t-[1px] border-solid box-border" />
         <div className="flex-1 flex flex-col items-start justify-start gap-3.5 min-w-[312px] max-w-full">
           <div className="relative tracking-[0.15em] leading-[120%] uppercase font-medium inline-block min-w-[53px]">

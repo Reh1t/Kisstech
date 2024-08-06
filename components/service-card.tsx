@@ -69,7 +69,7 @@ const ServiceCard: NextPage<ServiceCardType> = ({
 
   return (
     <div
-      className={`w-[550px] rounded-3xs bg-main-background border-border-1 border-[1px] border-solid box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-3 px-[49px] gap-9 max-w-full text-left text-13xl text-primary font-heading-2 mq800:flex-wrap gap-[18px] mq800:pl-6 mq800:pr-6 mq800:box-border ${className}`}
+      className={`w-[550px] rounded-3xs bg-main-background border-border-1 border-[1px] border-solid box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-3 px-[49px] gap-9 max-w-full text-left text-13xl text-primary font-heading-2 mq800:flex-wrap mq800:pl-6 mq800:pr-6 mq800:box-border ${className}`}
       style={serviceCardStyle}
     >
       <div className="rounded-8xs bg-variant-background overflow-hidden flex flex-row items-center justify-start py-[34px] px-7">

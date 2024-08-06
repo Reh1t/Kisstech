@@ -43,7 +43,7 @@ const Products: NextPage = () => {
         helpMinWidth="36px"
       />
       <section className="self-stretch bg-main-background overflow-hidden flex flex-col items-center justify-start py-[60px] px-5 box-border gap-5 max-w-full text-left text-37xl text-variant-background font-heading-2 mq450:pt-[39px] mq450:pb-[39px] mq450:box-border">
-        <div className="flex flex-row items-center justify-center py-0 px-[178px] box-border gap-10 max-w-full gap-5 mq800:pl-11 mq800:pr-11 mq800:box-border mq450:pl-5 mq450:pr-5 mq450:box-border mq1125:flex-wrap mq1125:pl-[89px] mq1125:pr-[89px] mq1125:box-border">
+        <div className="flex flex-row items-center justify-center py-0 px-[178px] box-border gap-10 max-w-full mq800:pl-11 mq800:pr-11 mq800:box-border mq450:pl-5 mq450:pr-5 mq450:box-border mq1125:flex-wrap mq1125:pl-[89px] mq1125:pr-[89px] mq1125:box-border">
           <div className="h-10 w-[241px] flex flex-col items-start justify-start py-5 px-0 box-border">
             <div className="self-stretch h-px relative border-border-2 border-t-[1px] border-solid box-border" />
           </div>
@@ -66,7 +66,7 @@ const Products: NextPage = () => {
       <WhyUs />
       <Banner />
       <FrameComponent />
-      <section className="bg-white overflow-hidden flex flex-col items-start justify-start py-0 pl-[108px] pr-32 box-border gap-[49px] max-w-full text-left text-13xl text-primary font-heading-2 gap-6 mq800:pl-[54px] mq800:pr-16 mq800:box-border mq450:pl-5 mq450:pr-5 mq450:box-border">
+      <section className="bg-white overflow-hidden flex flex-col items-start justify-start py-0 pl-[108px] pr-32 box-border gap-[49px] max-w-full text-left text-13xl text-primary font-heading-2 mq800:pl-[54px] mq800:pr-16 mq800:box-border mq450:pl-5 mq450:pr-5 mq450:box-border">
         <div className="w-[404px] flex flex-col items-start justify-start max-w-full">
           <h1 className="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[120%] font-bold font-inherit mq800:text-7xl mq800:leading-[31px] mq450:text-lgi mq450:leading-[23px]">
             Business Service Products
@@ -365,7 +365,7 @@ const Products: NextPage = () => {
             Advertising Products
           </h1>
         </div>
-        <div className="flex flex-row items-center justify-start gap-14 max-w-full gap-7 mq1350:flex-wrap">
+        <div className="flex flex-row items-center justify-start gap-14 max-w-full mq1350:flex-wrap">
           <div className="w-[364px] rounded-3xs bg-main-background overflow-hidden shrink-0 flex flex-row flex-wrap items-start justify-start pt-4 px-[42px] pb-[88px] box-border gap-x-[23px] gap-y-7 min-h-[707px] max-w-full mq450:pt-5 mq450:pb-[57px] mq450:box-border mq1350:pl-[21px] mq1350:pr-[21px] mq1350:box-border">
             <PRICEPERMONTH
               propAlignSelf="unset"
