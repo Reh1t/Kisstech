@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { useMemo, type CSSProperties, useCallback } from "react";
+import { useState, useMemo, type CSSProperties, useCallback } from "react";
 import { useRouter } from "next/router";
 import Button from "./button";
 
@@ -64,6 +64,9 @@ const Header: NextPage<HeaderType> = ({
   helpDisplay,
   helpMinWidth,
 }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
+
   const headerStyle: CSSProperties = useMemo(() => {
     return {
       top: headerTop,
@@ -143,7 +146,9 @@ const Header: NextPage<HeaderType> = ({
     };
   }, [helpDisplay, helpMinWidth]);
 
-  const router = useRouter();
+  const getNavItemStyle = (path: string) => {
+    return router.pathname === path ? { color: "#3aa9e9" } : {};
+  };
 
   const onHomeClick = useCallback(() => {
     router.push("/");
@@ -169,9 +174,13 @@ const Header: NextPage<HeaderType> = ({
     router.push("/help-center");
   }, [router]);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header
-      className={`self-stretch bg-main-background overflow-hidden flex flex-row items-center justify-between py-[10px] pl-[27px] pr-[154px] box-border top-[0] z-[99] sticky max-w-full gap-5 mq825:pr-[77px] mq825:box-border mq450:pr-5 mq450:box-border ${className}`}
+      className={`self-stretch bg-main-background overflow-hidden flex flex-row items-center justify-between py-[10px] pl-[27px] pr-[154px] box-border top-[0] z-[99] sticky max-w-full gap-5 ${className}`}
       style={headerStyle}
     >
       <div
@@ -202,45 +211,69 @@ const Header: NextPage<HeaderType> = ({
         </div>
       </div>
       <nav
-        className="m-0 w-auto flex flex-row items-start justify-start gap-6 max-w-full text-left text-mid text-gray-1 font-heading-2 mq825:hidden"
+        className={`m-0 w-auto flex flex-row items-start justify-start gap-6 max-w-full text-left text-mid text-gray-1 font-heading-2 ${
+          isMenuOpen ? "lg:block" : "lg:hidden"
+        } lg:flex`}
         style={menuStyle}
       >
         <div
           className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] cursor-pointer"
           onClick={onHomeClick}
-          style={homeStyle}
+          style={{ ...homeStyle, ...getNavItemStyle("/") }}
         >
           Home
         </div>
         <div
           className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] cursor-pointer"
           onClick={onAboutUsTextClick}
-          style={aboutUsStyle}
+          style={{ ...aboutUsStyle, ...getNavItemStyle("/about-us") }}
         >
           About Us
         </div>
         <div
           className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] cursor-pointer"
           onClick={onServicesTextClick}
-          style={servicesStyle}
+          style={{ ...servicesStyle, ...getNavItemStyle("/service-details") }}
         >
           Products
         </div>
         <div
           className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] cursor-pointer"
           onClick={onMoreTextClick}
-          style={moreStyle}
+          style={{ ...moreStyle, ...getNavItemStyle("/products") }}
         >
           Pricing
         </div>
         <div
           className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] cursor-pointer"
           onClick={onHelpTextClick}
-          style={helpStyle}
+          style={{ ...helpStyle, ...getNavItemStyle("/help-center") }}
         >
           Help
         </div>
       </nav>
+      <div className="lg:block justify-end">
+        <button
+          onClick={toggleMenu}
+          className="text-gray-500 hover:text-gray-700 focus:outline-none"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="transparent"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+              // d1="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
       <Button
         onButtonClick={onButtonClick}
         propPadding="15px 30px"

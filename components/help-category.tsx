@@ -24,6 +24,7 @@ const HelpCategory: NextPage<HelpCategoryType> = ({ className = "" }) => {
           knowledgeBase="Knowledge Base"
           text="We are passionate about education and while we learn, we want to be able to share that with you."
           onIconBoxContainerClick={onIconBoxContainerClick}
+          className="cursor-pointer"
         />
         <IconBox2
           vector="/vector-1@2x.png"

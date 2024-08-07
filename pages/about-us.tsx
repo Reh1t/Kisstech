@@ -9,7 +9,31 @@ import Footer from "../components/footer";
 const AboutUs: NextPage = () => {
   return (
     <div className="w-full relative bg-white flex flex-col items-end justify-start leading-[normal] tracking-[normal]">
-      <Header group1="/group-1.svg" getAQuote="Contact Us" />
+      <Header
+        group1="/group-1.svg"
+        getAQuote="Contact Us"
+        headerTop="0"
+        headerPosition="sticky"
+        headerGap="20px"
+        frameDivWidth="296px"
+        frameFlex="1"
+        groupIconAlignSelf="stretch"
+        groupIconOverflow="hidden"
+        menuMargin="0"
+        menuWidth="359px"
+        homeDisplay="inline-block"
+        homeMinWidth="46px"
+        aboutUsFlex="1"
+        aboutUsDisplay="inline-block"
+        aboutUsMinWidth="71px"
+        servicesFlex="1"
+        servicesDisplay="inline-block"
+        servicesMinWidth="70px"
+        moreDisplay="inline-block"
+        moreMinWidth="40px"
+        helpDisplay="inline-block"
+        helpMinWidth="36px"
+      />
       <PageHeader
         aboutUs="About Us"
         atKisstechOurRootsRunDeep="At Kisstech, our roots run deep in entrepreneurship and small business management. We intimately understand the challenges business owners face and the gaps in the market. Navigating the maze of technology options and avoiding scams that promise great online results but fail to deliver tangible outcomes can be frustrating. "
