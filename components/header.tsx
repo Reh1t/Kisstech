@@ -145,6 +145,10 @@ const Header: NextPage<HeaderType> = ({
 
   const router = useRouter();
 
+  const onHomeClick = useCallback(() => {
+    router.push("/");
+  }, [router]);
+
   const onButtonClick = useCallback(() => {
     router.push("/contact-us");
   }, [router]);
@@ -198,38 +202,39 @@ const Header: NextPage<HeaderType> = ({
         </div>
       </div>
       <nav
-        className="m-0 w-[359px] flex flex-row items-start justify-start gap-6 max-w-full text-left text-mid text-gray-1 font-heading-2 mq825:hidden"
+        className="m-0 w-auto flex flex-row items-start justify-start gap-6 max-w-full text-left text-mid text-gray-1 font-heading-2 mq825:hidden"
         style={menuStyle}
       >
         <div
-          className="relative tracking-[-0.03em] leading-[100%] font-medium text-accent inline-block min-w-[46px]"
+          className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] cursor-pointer"
+          onClick={onHomeClick}
           style={homeStyle}
         >
           Home
         </div>
         <div
-          className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] whitespace-nowrap cursor-pointer"
+          className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] cursor-pointer"
           onClick={onAboutUsTextClick}
           style={aboutUsStyle}
         >
           About Us
         </div>
         <div
-          className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[70px] cursor-pointer"
+          className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] cursor-pointer"
           onClick={onServicesTextClick}
           style={servicesStyle}
         >
           Products
         </div>
         <div
-          className="relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[40px] cursor-pointer"
+          className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] cursor-pointer"
           onClick={onMoreTextClick}
           style={moreStyle}
         >
-          More
+          Pricing
         </div>
         <div
-          className="relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[36px] cursor-pointer"
+          className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] cursor-pointer"
           onClick={onHelpTextClick}
           style={helpStyle}
         >
@@ -238,10 +243,7 @@ const Header: NextPage<HeaderType> = ({
       </nav>
       <Button
         onButtonClick={onButtonClick}
-        propAlignSelf="unset"
-        propPadding="20px 30px"
-        propFlex="unset"
-        propMinWidth="unset"
+        propPadding="15px 30px"
         propBackgroundColor="#050509"
         getAQuote={getAQuote}
         propMinWidth1="86px"

@@ -9,7 +9,7 @@ const FrameComponent: NextPage<FrameComponentType> = ({ className = "" }) => {
     <section
       className={`self-stretch flex flex-col items-center justify-start py-6 px-5 box-border gap-[30px] max-w-full text-left text-mid text-secondary font-heading-2 mq800:pt-5 mq800:pb-5 mq800:box-border ${className}`}
     >
-      <div className="flex flex-row flex-wrap items-center justify-center py-0 pl-0 pr-0.5 box-border gap-x-[51px] gap-y-[49px] max-w-full gap-6">
+      <div className="flex flex-row flex-wrap items-end justify-center py-0 pl-0 pr-0.5 box-border gap-x-[51px] gap-y-[49px] max-w-full gap-6">
         <div className="flex flex-col items-start justify-start gap-3.5 max-w-full">
           <div className="relative tracking-[0.15em] leading-[120%] uppercase font-medium">
             Pricing Plans
@@ -18,7 +18,7 @@ const FrameComponent: NextPage<FrameComponentType> = ({ className = "" }) => {
             Choose the Perfect Plan for Your Business
           </h1>
         </div>
-        <div className="flex flex-row items-center justify-start gap-3 text-accent">
+        <div className="flex flex-row items-end justify-start gap-3 text-accent mb-3">
           <img
             className="h-6 w-6 relative overflow-hidden shrink-0"
             loading="lazy"
@@ -52,7 +52,7 @@ Choose at least three services to qualify
  for our discounted rates!`}
           </div>
         </div>
-        <div className="h-[424px] flex-1 rounded-61xl flex flex-col items-start justify-start min-w-[335px] max-w-full">
+        <div className="flex-1 rounded-61xl flex flex-col items-start justify-start min-w-[335px] max-w-full">
           <img
             className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
             loading="lazy"

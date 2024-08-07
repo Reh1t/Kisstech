@@ -81,9 +81,12 @@ const WhyUs1: NextPage<WhyUs1Type> = ({ className = "" }) => {
           </div>
         </div>
       </div>
-      <div className="h-[888px] w-[486px] flex flex-row items-start justify-start max-w-full">
-        <div className="self-stretch flex-1 relative rounded-31xl max-w-full" />
-      </div>
+      <div className="h-[888px] w-[486px] flex flex-row items-center max-w-full">
+        <img
+          className="relative top-[0px] left-[0px] w-[486px] h-[555px] object-cover items-center rounded-3xl"
+          alt=""
+          src="/individualsholdingsmallumbrellasandmodelhome20231127045620utc-1@2x.png"/>
+        </div>
     </section>
   );
 };

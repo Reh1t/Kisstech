@@ -46,7 +46,7 @@ const WhyUs: NextPage<WhyUsType> = ({ className = "" }) => {
             src="/individualsholdingsmallumbrellasandmodelhome20231127045620utc-1@2x.png"
           />
         </div>
-        <div className="!m-[0] absolute top-[180px] left-[-30px] shadow-[0px_20px_90px_rgba(0,_0,_0,_0.25)] rounded-tl-3xs rounded-tr-980xl rounded-br-980xl rounded-bl-3xs bg-white flex flex-row items-start justify-start gap-3 z-[1] w-[260px]">
+        <div className="!m-[0] absolute top-[180px] left-[-30px] shadow-[0px_20px_90px_rgba(0,_0,_0,_0.25)] rounded-tl-3xs rounded-tr-980xl rounded-br-980xl rounded-bl-3xs bg-white flex flex-row items-start justify-start py-2 px-2 gap-3 z-[1] w-[260px]">
           <div className="flex flex-col items-start justify-start pt-[5px] px-0 pb-0 ml-2">
             <b className="relative tracking-[-0.02em] leading-[120%] inline-block min-w-[70px] whitespace-nowrap mq800:text-7xl mq800:leading-[31px] mq450:text-lgi mq450:leading-[23px]">
               <span>90</span>

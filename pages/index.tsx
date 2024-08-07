@@ -28,12 +28,9 @@ const Home: NextPage = () => {
         headerPosition="sticky"
         headerGap="20px"
         frameDivWidth="296px"
-        frameWidth="unset"
         frameFlex="1"
-        frameWidth1="unset"
         groupIconAlignSelf="stretch"
         groupIconOverflow="hidden"
-        groupIconWidth="unset"
         menuMargin="0"
         menuWidth="359px"
         homeDisplay="inline-block"
@@ -56,7 +53,6 @@ const Home: NextPage = () => {
         <Right />
       </section>
       <Banner
-        bannerWidth="unset"
         bannerAlignSelf="stretch"
         containerGap="20px"
         funFact1Width="296px"
@@ -147,10 +143,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <Button
-                propAlignSelf="unset"
                 propPadding="20px 30px"
-                propFlex="unset"
-                propMinWidth="unset"
                 propBackgroundColor="#050509"
                 getAQuote="Learn More"
                 propMinWidth1="86px"
@@ -180,102 +173,71 @@ const Home: NextPage = () => {
               <ServiceCard
                 heading={`Web Design & Hosting`}
                 propDisplay="inline-block"
-                propHeight="unset"
                 paragraph="Create a powerful online presence with our expert web design and hosting services. Our team crafts visually appealing and user-friendly websites, ensuring your business stands out in the crowded digital landscape."
-                propDisplay1="unset"
-                propMinHeight="unset"
                 serviceCardWidth="550px"
                 titleFlex="1"
                 titleMinWidth="221px"
                 headingMargin="0"
                 headingFontWeight="700"
-                paragraphWidth="unset"
                 paragraphAlignSelf="stretch"
               />
               <ServiceCard
                 heading="AI-Integrated Systems"
                 propDisplay="inline-block"
-                propHeight="38px"
                 paragraph="Embrace the future with artificial intelligence. Our AI-integrated systems enhance efficiency, automate processes, and provide valuable insights for informed decision-making."
-                propDisplay1="unset"
-                propMinHeight="unset"
                 serviceCardWidth="550px"
                 titleFlex="1"
                 titleMinWidth="221px"
                 headingMargin="0"
                 headingFontWeight="700"
-                paragraphWidth="unset"
                 paragraphAlignSelf="stretch"
               />
               <ServiceCard
                 heading="Sales Support "
-                propDisplay="unset"
-                propHeight="unset"
                 paragraph="Empower your sales team with our sales support services. From CRM integration to lead generation strategies, we enhance your sales processes for improved performance."
-                propDisplay1="unset"
-                propMinHeight="unset"
                 serviceCardWidth="550px"
                 titleFlex="1"
                 titleMinWidth="221px"
                 headingMargin="0"
                 headingFontWeight="700"
-                paragraphWidth="unset"
                 paragraphAlignSelf="stretch"
               />
-              <div className="w-[550px] rounded-3xs bg-main-background border-border-1 border-[1px] border-solid box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-3 px-[49px] gap-9 max-w-full mq750:flex-wrap gap-[18px] mq750:pl-6 mq750:pr-6 mq750:box-border">
-                <div className="rounded-8xs bg-variant-background overflow-hidden flex flex-row items-center justify-start py-[34px] px-7">
-                  <img
-                    className="h-5 w-[18px] relative"
-                    alt=""
-                    src="/vector-11.svg"
-                  />
-                </div>
-                <div className="flex-1 flex flex-col items-start justify-start gap-2.5 min-w-[221px] max-w-full">
-                  <h1 className="m-0 relative text-inherit tracking-[-0.02em] leading-[120%] font-bold font-inherit mq1050:text-7xl mq1050:leading-[31px] mq450:text-lgi mq450:leading-[23px]">
-                    <p className="m-0">{`Phone Systems & `}</p>
-                    <p className="m-0">Transcription</p>
-                  </h1>
-                  <div className="self-stretch relative text-base tracking-[-0.03em] leading-[160%] font-medium text-text">
-                    Experience seamless communication with our advanced phone
+              <ServiceCard
+                heading={`Phone Systems & 
+                  Transcription`}
+                paragraph="Experience seamless communication with our advanced phone
                     systems. From VoIP solutions to integrated communication
                     platforms, we provide the tools to keep your business
-                    connected.
-                  </div>
-                </div>
-              </div>
-              <div className="w-[550px] rounded-3xs bg-main-background border-border-1 border-[1px] border-solid box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-3 px-[49px] gap-9 max-w-full mq750:flex-wrap gap-[18px] mq750:pl-6 mq750:pr-6 mq750:box-border">
-                <div className="rounded-8xs bg-variant-background overflow-hidden flex flex-row items-center justify-start py-[34px] px-7">
-                  <img
-                    className="h-5 w-[18px] relative"
-                    alt=""
-                    src="/vector-11.svg"
-                  />
-                </div>
-                <div className="flex-1 flex flex-col items-start justify-start gap-2.5 min-w-[221px] max-w-full">
-                  <h1 className="m-0 relative text-inherit tracking-[-0.02em] leading-[120%] font-bold font-inherit mq1050:text-7xl mq1050:leading-[31px] mq450:text-lgi mq450:leading-[23px]">
-                    <p className="m-0">{`Marketing Material & `}</p>
-                    <p className="m-0">Strategies</p>
-                  </h1>
-                  <div className="self-stretch relative text-base tracking-[-0.03em] leading-[160%] font-medium text-text">
-                    Unlock the full potential of digital marketing with our
-                    comprehensive strategies. From content creation to SEO
-                    optimization, we help you reach you drive results.
-                  </div>
-                </div>
-              </div>
-              <ServiceCard
-                heading="Social Media "
-                propDisplay="unset"
-                propHeight="unset"
-                paragraph="We offer expert social media services designed to elevate your brand’s presence, engage audiences, and drive conversions across all major platforms."
-                propDisplay1="unset"
-                propMinHeight="unset"
+                    connected."
                 serviceCardWidth="550px"
                 titleFlex="1"
                 titleMinWidth="221px"
                 headingMargin="0"
                 headingFontWeight="700"
-                paragraphWidth="unset"
+                paragraphAlignSelf="stretch"
+              />
+              <ServiceCard
+                heading={`Marketing Material & 
+                  Strategies`}
+                paragraph="Unlock the full potential of digital marketing with our
+                    comprehensive strategies. From content creation to SEO
+                    optimization, we help you reach you drive results."
+                serviceCardWidth="550px"
+                titleFlex="1"
+                titleMinWidth="221px"
+                headingMargin="0"
+                headingFontWeight="700"
+                paragraphAlignSelf="stretch"
+              />
+
+              <ServiceCard
+                heading="Social Media "
+                paragraph="We offer expert social media services designed to elevate your brand’s presence, engage audiences, and drive conversions across all major platforms."
+                serviceCardWidth="550px"
+                titleFlex="1"
+                titleMinWidth="221px"
+                headingMargin="0"
+                headingFontWeight="700"
                 paragraphAlignSelf="stretch"
               />
               <div className="rounded-3xs bg-main-background border-border-1 border-[1px] border-solid box-border overflow-hidden hidden flex-row items-center justify-center py-3 px-[49px] gap-9 max-w-full mq750:flex-wrap">
@@ -327,27 +289,17 @@ const Home: NextPage = () => {
       <WhyUs1 />
       <Testimonials />
       <ContactFormSection
-        yourMessageHeight="unset"
-        yourMessagePadding="unset"
         fieldPadding="24px"
-        fieldHeight="unset"
         getAQuoteMinWidth="159px"
-        propMargin="unset"
-        propHeight="unset"
-        propPadding="unset"
         propPadding1="24px"
-        propHeight1="unset"
         propMinWidth="159px"
-        propMargin1="unset"
         yourName="Your Name"
         yourName1="Your Email"
         enterYourNamePlaceholder="Enter Your Name"
         enterYourNamePlaceholder1="Enter Your Email"
         getAQuote="Send Message"
-        contactFormSectionWidth="unset"
         contactFormSectionAlignSelf="stretch"
         contactFormSectionGap="158px"
-        contactInfoAlignSelf="unset"
         contactInfoPadding="18px 0px"
         contactInfoMinWidth="480px"
         readyToTakeMargin="0"
@@ -356,30 +308,23 @@ const Home: NextPage = () => {
         contactUsFontWeight="700"
         headerMargin="0"
         headerFontWeight="700"
-        lineDivWidth="unset"
         lineDivAlignSelf="stretch"
         iconBoxWidth="336px"
-        iconBox1Width="unset"
         iconBox1AlignSelf="stretch"
-        iconBox2Width="unset"
         iconBox2AlignSelf="stretch"
-        contactFormWidth="unset"
         contactFormFlex="1"
         contactFormMinWidth="338px"
       />
       <Footer
         kissTech="/kisstech.svg"
         footerAlignSelf="stretch"
-        footerWidth="unset"
         containerWidth="1177px"
         allLinksAlignSelf="stretch"
         allLinksPadding="0px 2px 0px 0px"
         allLinksGap="20px"
-        allLinksWidth="unset"
         phoneSpaceDisplay="inline-block"
         phoneSpaceMinWidth="112px"
         navigationPadding="0px 3px 0px 0px"
-        navigationAlignSelf="unset"
         phoneSystemsDisplay="inline-block"
         phoneSystemsMinWidth="111px"
         salesSupportDisplay="inline-block"
@@ -404,7 +349,6 @@ const Home: NextPage = () => {
         lineHeight="0px"
         linePadding="0px 18px 0px"
         lineDivFlex="1"
-        lineDivWidth="unset"
         copyrightPadding="0px 20px"
         designedByTokoTemaAlignSelf="stretch"
       />

@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { useMemo, type CSSProperties } from "react";
 import FormField from "./form-field";
 import Button from "./button";
+import { handleFormSubmit } from "./handleContactForm";
 
 export type ContactFormSectionType = {
   className?: string;
@@ -210,11 +211,11 @@ const ContactFormSection: NextPage<ContactFormSectionType> = ({
 
   return (
     <section
-      className={`self-stretch bg-white overflow-hidden flex flex-row items-start justify-start py-[60px] px-[141px] box-border gap-[158px] max-w-full text-left text-mid text-secondary font-heading-2 lg:flex-wrap gap-[79px] lg:pl-[70px] lg:pr-[70px] lg:box-border gap-[39px] mq750:py-[39px] mq750:px-[35px] mq750:box-border gap-5 ${className}`}
+      className={`self-stretch bg-white overflow-hidden flex flex-row items-start justify-start py-[60px] px-[141px] box-border gap-[158px] max-w-full text-left text-mid text-secondary font-heading-2 lg:flex-wrap lg:pl-[70px] lg:pr-[70px] lg:box-border mq750:py-[39px] mq750:px-[35px] mq750:box-border ${className}`}
       style={contactFormSectionStyle}
     >
       <div
-        className="w-[480px] flex flex-col items-center justify-center py-[18px] px-0 box-border gap-[50px] min-w-[480px] max-w-full lg:flex-1 gap-[25px] mq1050:min-w-full"
+        className="w-[480px] flex flex-col items-center justify-center py-[18px] px-0 box-border gap-[50px] min-w-[480px] max-w-full lg:flex-1 mq1050:min-w-full"
         style={contactInfoStyle}
       >
         <div className="self-stretch flex flex-col items-start justify-start gap-3.5">
@@ -312,20 +313,38 @@ const ContactFormSection: NextPage<ContactFormSectionType> = ({
           </div>
         </div>
       </div>
-      <div
-        className="flex-1 rounded-xl bg-main-background overflow-hidden flex flex-col items-start justify-start py-[54px] px-16 box-border gap-9 min-w-[338px] max-w-full text-xl text-primary gap-[18px] mq750:py-[35px] mq750:px-8 mq750:box-border mq750:min-w-full"
+      <form
+        onSubmit={handleFormSubmit}
+        className="flex-1 rounded-xl bg-main-background overflow-hidden flex flex-col items-start justify-start py-[54px] px-16 box-border gap-9 min-w-[338px] max-w-full text-xl text-primary mq750:py-[35px] mq750:px-8 mq750:box-border mq750:min-w-full"
         style={contactFormStyle}
       >
         <div className="self-stretch flex flex-col items-start justify-start gap-5">
-          <FormField
-            yourName={yourName}
-            enterYourNamePlaceholder={enterYourNamePlaceholder}
-          />
-          <FormField
-            yourName={yourName1}
-            enterYourNamePlaceholder={enterYourNamePlaceholder1}
-            propWidth="101px"
-          />
+          <div className="self-stretch flex flex-col items-start justify-start gap-3.5">
+            <div className="self-stretch relative leading-[120%] font-medium mq450:text-base mq450:leading-[19px]">
+              Your Name
+            </div>
+            <input
+              className="border-border-1 border-[1px] border-solid bg-white h-auto w-auto [outline:none] self-stretch rounded-mini box-border overflow-hidden shrink-0 flex flex-row items-start justify-start py-3.5 px-[30px] font-heading-2 font-medium text-sm text-gray-1"
+              placeholder="Enter Your Name"
+              type="text"
+              id="name"
+              defaultValue={""}
+              required
+            />
+          </div>
+          <div className="self-stretch flex flex-col items-start justify-start gap-3.5">
+            <div className="self-stretch relative leading-[120%] font-medium mq450:text-base mq450:leading-[19px]">
+              Your Email
+            </div>
+            <input
+              className="border-border-1 border-[1px] border-solid bg-white h-auto w-auto [outline:none] self-stretch rounded-mini box-border overflow-hidden shrink-0 flex flex-row items-start justify-start py-3.5 px-[30px] font-heading-2 font-medium text-sm text-gray-1"
+              placeholder="Enter Your Email"
+              id="email"
+              type="email"
+              defaultValue={""}
+              required
+            />
+          </div>
           <div className="self-stretch flex flex-col items-start justify-start gap-3.5">
             <div className="self-stretch relative leading-[120%] font-medium mq450:text-base mq450:leading-[19px]">
               Your Message
@@ -335,22 +354,19 @@ const ContactFormSection: NextPage<ContactFormSectionType> = ({
               placeholder="Enter Your Message"
               rows={8}
               cols={20}
+              id="message"
+              defaultValue={""}
+              required
             />
           </div>
         </div>
-        <Button
-          propAlignSelf="stretch"
-          propPadding="20px"
-          propFlex="unset"
-          propMinWidth="unset"
-          propBackgroundColor="#050509"
-          getAQuote={getAQuote}
-          propMinWidth1="111px"
-          propColor="#fff"
-          buttonBorder="none"
-          getAQuoteDisplay="inline-block"
-        />
-      </div>
+        <button
+          type="submit"
+          className="self-stretch rounded-full bg-black overflow-hidden flex flex-row items-center justify-center p-4 min-w-28 max-w-full text-xl text-main-background"
+        >
+          Send Message
+        </button>
+      </form>
     </section>
   );
 };
