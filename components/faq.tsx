@@ -1,10 +1,10 @@
-import { useState, useMemo, type CSSProperties } from "react";
+import { useState, useMemo, type CSSProperties, ReactNode } from "react";
 import type { NextPage } from "next";
 
 export type FaqType = {
   className?: string;
   question: string;
-  answer: string;
+  answer: ReactNode; // Updated to allow ReactNode type
   plusIcon: string;
   minusIcon: string;
 
