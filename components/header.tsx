@@ -211,7 +211,7 @@ const Header: NextPage<HeaderType> = ({
         </div>
       </div>
       <nav
-        className={`m-0 w-full flex flex-row items-center justify-center gap-4 max-w-full text-left text-mid text-gray-1 font-heading-2 ${
+        className={`m-0 w-full flex lg:flex-col items-center justify-center gap-4 max-w-full text-left text-mid text-gray-1 font-heading-2 ${
           isMenuOpen ? "lg:flex" : "lg:hidden"
         }`}
       >
@@ -252,28 +252,6 @@ const Header: NextPage<HeaderType> = ({
         </div>
       </nav>
 
-      <div className="lg:hidden justify-end">
-        <button
-          onClick={toggleMenu}
-          className="text-gray-500 hover:text-gray-700 bg-inherit focus:outline-none"
-        >
-          <svg
-            className="w-6 h-6"
-            fill="transparent"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-              // d1="M6 18L18 6M6 6l12 12"
-            ></path>
-          </svg>
-        </button>
-      </div>
       <Button
         onButtonClick={onButtonClick}
         propPadding="15px 30px"
@@ -284,6 +262,28 @@ const Header: NextPage<HeaderType> = ({
         buttonBorder="none"
         getAQuoteDisplay="inline-block"
       />
+      <div className="hidden lg:block justify-end">
+        <button
+          onClick={toggleMenu}
+          className="text-gray-500 hover:text-gray-700 bg-inherit focus:outline-none"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              color={isMenuOpen ? "red" : "black"}
+              d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+            ></path>
+          </svg>
+        </button>
+      </div>
     </header>
   );
 };
