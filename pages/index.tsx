@@ -143,6 +143,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <Button
+                url="/about-us"
                 propPadding="20px 30px"
                 propBackgroundColor="#050509"
                 getAQuote="Learn More"

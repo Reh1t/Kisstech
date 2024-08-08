@@ -46,9 +46,9 @@ const Card: NextPage<CardType> = ({ className = "" }) => {
           </div>
         </div>
       </div>
-      <div className="h-px w-[265px] relative border-border-2 border-t-[1px] border-solid box-border" />
+      <div className="w-[265px] relative border-border-2 border-t-[1px] border-solid box-border" />
       <div className="w-[264px] flex flex-col items-start justify-start gap-6 text-xs">
-        <div className="self-stretch h-[184px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border gap-3.5">
+        <div className="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border gap-3.5">
           <div className="relative tracking-[0.15em] leading-[120%] uppercase font-medium inline-block min-w-[71px]">
             Includes
           </div>
@@ -81,7 +81,8 @@ const Card: NextPage<CardType> = ({ className = "" }) => {
         propColor="#fff"
         buttonBorder="none"
         getAQuoteDisplay="inline-block"
-      />
+        url="/contact-us"
+        />
     </div>
   );
 };

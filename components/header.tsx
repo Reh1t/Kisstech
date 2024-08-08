@@ -211,51 +211,51 @@ const Header: NextPage<HeaderType> = ({
         </div>
       </div>
       <nav
-        className={`m-0 w-auto flex flex-row items-start justify-start gap-6 max-w-full text-left text-mid text-gray-1 font-heading-2 ${
-          isMenuOpen ? "lg:block" : "lg:hidden"
-        } lg:flex`}
-        style={menuStyle}
+        className={`m-0 w-full flex flex-row items-center justify-center gap-4 max-w-full text-left text-mid text-gray-1 font-heading-2 ${
+          isMenuOpen ? "lg:flex" : "lg:hidden"
+        }`}
       >
         <div
-          className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] cursor-pointer"
+          className="text-center tracking-[-0.03em] leading-[100%] font-medium cursor-pointer"
           onClick={onHomeClick}
-          style={{ ...homeStyle, ...getNavItemStyle("/") }}
+          style={getNavItemStyle("/")}
         >
           Home
         </div>
         <div
-          className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] cursor-pointer"
+          className="text-center tracking-[-0.03em] leading-[100%] font-medium cursor-pointer mx-2" // Added mx-2 for slight spacing
           onClick={onAboutUsTextClick}
-          style={{ ...aboutUsStyle, ...getNavItemStyle("/about-us") }}
+          style={getNavItemStyle("/about-us")}
         >
           About Us
         </div>
         <div
-          className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] cursor-pointer"
+          className="text-center tracking-[-0.03em] leading-[100%] font-medium cursor-pointer mx-2"
           onClick={onServicesTextClick}
-          style={{ ...servicesStyle, ...getNavItemStyle("/service-details") }}
+          style={getNavItemStyle("/service-details")}
+        >
+          Services
+        </div>
+        <div
+          className="text-center tracking-[-0.03em] leading-[100%] font-medium cursor-pointer mx-2"
+          onClick={onMoreTextClick}
+          style={getNavItemStyle("/products")}
         >
           Products
         </div>
         <div
-          className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] cursor-pointer"
-          onClick={onMoreTextClick}
-          style={{ ...moreStyle, ...getNavItemStyle("/products") }}
-        >
-          Pricing
-        </div>
-        <div
-          className="flex-1 relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[71px] cursor-pointer"
+          className="text-center tracking-[-0.03em] leading-[100%] font-medium cursor-pointer mx-2"
           onClick={onHelpTextClick}
-          style={{ ...helpStyle, ...getNavItemStyle("/help-center") }}
+          style={getNavItemStyle("/help-center")}
         >
           Help
         </div>
       </nav>
-      <div className="lg:block justify-end">
+
+      <div className="lg:hidden justify-end">
         <button
           onClick={toggleMenu}
-          className="text-gray-500 hover:text-gray-700 focus:outline-none"
+          className="text-gray-500 hover:text-gray-700 bg-inherit focus:outline-none"
         >
           <svg
             className="w-6 h-6"

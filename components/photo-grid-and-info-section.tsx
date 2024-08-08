@@ -13,6 +13,7 @@ export type PhotoGridAndInfoSectionType = {
   whyChooseKisstech?: boolean;
   text?: string;
   getAQuote?: string;
+  url?: string; // Add this prop to receive the URL
 
   /** Style props */
   propMinHeight?: CSSProperties["minHeight"];
@@ -80,6 +81,7 @@ const PhotoGridAndInfoSection: NextPage<PhotoGridAndInfoSectionType> = ({
   text,
   propFontWeight1,
   getAQuote,
+  url,
   photoGridAndInfoSectionAlignSelf,
   photoGridAndInfoSectionWidth,
   frameDivPadding,
@@ -244,7 +246,7 @@ const PhotoGridAndInfoSection: NextPage<PhotoGridAndInfoSectionType> = ({
         style={frameDiv2Style}
       >
         <div
-          className="w-[1272px] flex flex-row items-start justify-center py-0 px-[156px] box-border gap-[97px] max-w-full lg:flex-wrap gap-12 mq825:pl-[39px] mq825:pr-[39px] mq825:box-border gap-6 mq1400:pl-[78px] mq1400:pr-[78px] mq1400:box-border"
+          className="w-[1272px] flex flex-row items-start justify-center py-0 px-[156px] box-border gap-[97px] max-w-full lg:flex-wrap mq825:pl-[39px] mq825:pr-[39px] mq825:box-border mq1400:pl-[78px] mq1400:pr-[78px] mq1400:box-border"
           style={frameDiv5Style}
         >
           <div
@@ -328,7 +330,7 @@ const PhotoGridAndInfoSection: NextPage<PhotoGridAndInfoSectionType> = ({
                 {text}
               </div>
             </div>
-            <Button getAQuote={getAQuote} />
+            <Button url={url} getAQuote={getAQuote} />
           </div>
         </div>
         <div className="h-0 w-[1140px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border max-w-full">

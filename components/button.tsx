@@ -1,9 +1,11 @@
 import type { NextPage } from "next";
-import { useMemo, type CSSProperties } from "react";
+import router from "next/router";
+import { useCallback, useMemo, type CSSProperties } from "react";
 
 export type ButtonType = {
   className?: string;
   getAQuote?: string;
+  url?: string; // Add this prop to receive the URL
 
   /** Style props */
   propAlignSelf?: CSSProperties["alignSelf"];
@@ -23,6 +25,7 @@ export type ButtonType = {
 const Button: NextPage<ButtonType> = ({
   className = "",
   onButtonClick,
+  url, // Use this prop to navigate
   propAlignSelf,
   propPadding,
   propFlex,
@@ -34,6 +37,15 @@ const Button: NextPage<ButtonType> = ({
   buttonBorder,
   getAQuoteDisplay,
 }) => {
+  // Use the provided URL in the onButtonClick callback
+  const handleClick = useCallback(() => {
+    if (url) {
+      router.push(url);
+    } else if (onButtonClick) {
+      onButtonClick();
+    }
+  }, [url, onButtonClick]);
+
   const buttonStyle: CSSProperties = useMemo(() => {
     return {
       alignSelf: propAlignSelf,
@@ -63,7 +75,7 @@ const Button: NextPage<ButtonType> = ({
   return (
     <button
       className={`cursor-pointer [border:none] py-5 px-[30px] bg-primary rounded-80xl flex flex-row items-center justify-center whitespace-nowrap hover:bg-darkslategray ${className}`}
-      onClick={onButtonClick}
+      onClick={handleClick}
       style={buttonStyle}
     >
       <div

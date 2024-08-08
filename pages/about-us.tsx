@@ -56,6 +56,7 @@ const AboutUs: NextPage = () => {
         propMinWidth4="103px"
         unleashThePowerOfTechnolo="Your Digital Partner for Success"
         whyChooseKisstech
+        url="/products"
         propMargin="0"
         propHeight="29px"
         propFontWeight="700"
@@ -91,6 +92,7 @@ const AboutUs: NextPage = () => {
         whyChooseKisstech={false}
         text="Our mission is to help you succeed. We are excited about our services, and want you to start benefiting from them right away, but we understand you want to get to know us better and what we’re all about. With all of our customizable options, we know we have a solution that’s right for you."
         getAQuote="Get Started"
+        url="/contact-us"
       />
       <Footer kissTech="/kisstech.svg" />
     </div>

@@ -10,7 +10,7 @@ export type CardTrioType = {
 const CardTrio: NextPage<CardTrioType> = ({ className = "" }) => {
   return (
     <div
-      className={`flex flex-row items-center justify-start gap-14 max-w-full text-left text-5xl text-primary font-heading-2 gap-7 mq1350:flex-wrap ${className}`}
+      className={`flex flex-row items-center justify-start gap-14 max-w-full text-left text-5xl text-primary font-heading-2 mq1350:flex-wrap ${className}`}
     >
       <div className="w-[364px] rounded-3xs bg-main-background overflow-hidden shrink-0 flex flex-row flex-wrap items-start justify-start py-4 px-[42px] box-border gap-x-[23px] gap-y-7 min-h-[670px] max-w-full mq1350:pl-[21px] mq1350:pr-[21px] mq1350:box-border">
         <PRICEPERMONTH
@@ -106,7 +106,8 @@ const CardTrio: NextPage<CardTrioType> = ({ className = "" }) => {
           propColor="#fff"
           buttonBorder="none"
           getAQuoteDisplay="inline-block"
-        />
+          url="/contact-us"
+          />
       </div>
       <div className="w-[364px] rounded-3xs bg-variant-background overflow-hidden shrink-0 flex flex-row flex-wrap items-start justify-start pt-4 px-[42px] pb-9 box-border gap-x-[23px] gap-y-7 min-h-[670px] max-w-full text-main-background mq450:pt-5 mq450:pb-[23px] mq450:box-border mq1350:pl-[21px] mq1350:pr-[21px] mq1350:box-border">
         <PRICEPERMONTH
@@ -198,7 +199,8 @@ const CardTrio: NextPage<CardTrioType> = ({ className = "" }) => {
           propColor="#050509"
           buttonBorder="none"
           getAQuoteDisplay="inline-block"
-        />
+          url="/contact-us"
+          />
       </div>
       <Card />
     </div>

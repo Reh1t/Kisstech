@@ -167,6 +167,7 @@ const Products: NextPage = () => {
               propColor="#fff"
               buttonBorder="none"
               getAQuoteDisplay="inline-block"
+              url="/contact-us"
             />
           </div>
           <div className="w-[364px] rounded-3xs bg-variant-background overflow-hidden shrink-0 flex flex-row flex-wrap items-start justify-start pt-4 px-[42px] pb-[113px] box-border gap-x-[23px] gap-y-7 min-h-[804px] max-w-full text-white mq800:pt-5 mq800:pb-[73px] mq800:box-border mq1350:pl-[21px] mq1350:pr-[21px] mq1350:box-border">
@@ -261,6 +262,7 @@ const Products: NextPage = () => {
               propColor="#050509"
               buttonBorder="none"
               getAQuoteDisplay="inline-block"
+              url="/contact-us"
             />
           </div>
           <div className="w-[364px] rounded-3xs bg-main-background overflow-hidden shrink-0 flex flex-row flex-wrap items-start justify-start pt-4 px-[42px] pb-[151px] box-border gap-x-[23px] gap-y-7 min-h-[804px] max-w-full mq800:pt-5 mq800:pb-[98px] mq800:box-border mq1350:pl-[21px] mq1350:pr-[21px] mq1350:box-border">
@@ -357,6 +359,7 @@ const Products: NextPage = () => {
               propColor="#fff"
               buttonBorder="none"
               getAQuoteDisplay="inline-block"
+              url="/contact-us"
             />
           </div>
         </div>
@@ -456,6 +459,7 @@ const Products: NextPage = () => {
               propColor="#fff"
               buttonBorder="none"
               getAQuoteDisplay="inline-block"
+              url="/contact-us"
             />
           </div>
           <div className="w-[364px] rounded-3xs bg-variant-background overflow-hidden shrink-0 flex flex-row flex-wrap items-start justify-start pt-4 px-[42px] pb-[85px] box-border gap-x-[23px] gap-y-7 min-h-[707px] max-w-full text-white mq450:pt-5 mq450:pb-[55px] mq450:box-border mq1350:pl-[21px] mq1350:pr-[21px] mq1350:box-border">
@@ -551,6 +555,7 @@ const Products: NextPage = () => {
               propColor="#050509"
               buttonBorder="none"
               getAQuoteDisplay="inline-block"
+              url="/contact-us"
             />
           </div>
           <div className="w-[364px] rounded-3xs bg-main-background overflow-hidden shrink-0 flex flex-row flex-wrap items-start justify-start py-4 px-[42px] box-border gap-x-[23px] gap-y-7 min-h-[707px] max-w-full mq1350:pl-[21px] mq1350:pr-[21px] mq1350:box-border">
@@ -644,6 +649,7 @@ const Products: NextPage = () => {
               propColor="#fff"
               buttonBorder="none"
               getAQuoteDisplay="inline-block"
+              url="/contact-us"
             />
           </div>
         </div>
@@ -696,7 +702,8 @@ const Products: NextPage = () => {
         unleashThePowerFontWeight="700"
         unleashThePowerWidth="unset"
         unleashThePowerDisplay="unset"
-      />
+        url="/contact-us"
+        />
       <Footer
         kissTech="/kisstech.svg"
         footerAlignSelf="stretch"
