@@ -70,7 +70,7 @@ const Home: NextPage = () => {
       />
       <section className="self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-start justify-center py-[61px] px-5 box-border max-w-full text-left text-5xl text-gray-100 font-heading-2 mq750:pt-10 mq750:pb-10 mq750:box-border">
         <div className="w-[1240px] flex flex-row flex-wrap items-start justify-center py-0 px-0 box-border gap-[21px] min-h-[623px] max-w-full">
-          <div className="w-[1272px] flex flex-row items-start justify-center py-0 px-[27px] box-border gap-[97px] max-w-full gap-12 mq1050:flex-wrap gap-6">
+          <div className="w-[1272px] flex flex-row items-start justify-center py-0 px-[27px] box-border gap-24 max-w-full mq1050:flex-wrap">
             <div className="w-[537.4px] flex flex-col items-start justify-start gap-[27px] min-w-[537.4px] max-w-full mq750:min-w-full mq1050:flex-1">
               <div className="self-stretch flex flex-row items-center justify-start gap-px mq750:flex-wrap">
                   <img
@@ -145,7 +145,7 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section className="self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-start justify-center py-20 px-5 box-border max-w-full text-left text-mid text-secondary font-heading-2 lg:pt-[52px] lg:pb-[52px] lg:box-border mq750:pt-[34px] mq750:pb-[34px] mq750:box-border">
-        <div className="w-[1240px] flex flex-row flex-wrap items-start justify-start gap-[60px] min-h-[963px] max-w-full gap-[30px]">
+        <div className="w-[1240px] flex flex-row flex-wrap items-start justify-start gap-[60px] min-h-[963px] max-w-full">
           <div className="w-[518px] flex flex-row flex-wrap items-start justify-start py-0 pl-0 pr-[18px] box-border min-h-[78px] max-w-full">
             <div className="relative tracking-[0.15em] leading-[120%] uppercase font-medium shrink-0">
               Our Services

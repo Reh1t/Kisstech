@@ -224,7 +224,7 @@ const ContactFormSection: NextPage<ContactFormSectionType> = ({
           </div>
           <div className="self-stretch flex flex-col items-start justify-start gap-[30px] text-29xl text-primary">
             <h1
-              className="m-0 self-stretch relative text-inherit leading-[120%] font-bold font-inherit mq1050:text-19xl mq1050:leading-[46px] mq450:text-10xl mq450:leading-[35px]"
+              className="m-0 self-stretch relative text-inherit leading-[120%] font-bold font-inherit mq1050:text-19xl mq1050:leading-[46px] mq450:text-9xl mq450:leading-[35px]"
               style={readyToTakeStyle}
             >
               Ready to take your business to the next level?

@@ -9,7 +9,7 @@ const Right: NextPage<RightType> = ({ className = "" }) => {
     <div
       className={`h-[794px] flex-1 overflow-hidden flex flex-row flex-wrap items-start justify-start py-[86px] px-0 box-border relative min-w-[494px] max-w-full text-left text-sm text-primary font-heading-2 mq750:min-w-full ${className}`}
     >
-      <div className="h-60 w-80 absolute !m-[0] top-[86px] left-[0px] overflow-hidden shrink-0">
+      <div className="h-60 w-80 absolute !m-[0] top-[86px] left-[0px] overflow-hidden shrink-0 mq750:hidden">
         <div className="absolute h-full top-[0px] right-[0px] bottom-[0px] rounded-t-3xs rounded-b-none bg-accent w-[185px]" />
         <img
           className="absolute top-[-81.7px] left-[82.1px] w-[339.3px] h-[382.3px] object-contain z-[1]"
@@ -26,7 +26,7 @@ const Right: NextPage<RightType> = ({ className = "" }) => {
         />
       </div>
       
-      <div className="!m-[0] absolute top-[334px] left-[155px] rounded-3xs bg-steelblue flex flex-row items-start justify-start pt-[53px] pb-[52.6px] pl-[37px] pr-[27px]">
+      <div className="!m-[0] absolute top-[334px] left-[155px] rounded-3xs bg-steelblue flex flex-row items-start justify-start pt-[53px] pb-[52.6px] pl-[37px] pr-[27px] mq750:hidden">
         <div className="h-[171px] w-[152px] relative rounded-3xs bg-steelblue hidden" />
         <img
           className="h-[65.4px] w-[87.4px] relative z-[1]"

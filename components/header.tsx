@@ -180,7 +180,7 @@ const Header: NextPage<HeaderType> = ({
 
   return (
     <header
-      className={`self-stretch bg-main-background overflow-hidden flex flex-row items-center justify-between py-[10px] pl-[27px] pr-[154px] box-border top-[0] z-[99] sticky max-w-full gap-5 ${className}`}
+      className={`self-stretch bg-main-background overflow-hidden flex flex-row items-center justify-between py-[10px] mq450:px-8 mq750:px-24 px-32 box-border top-[0] z-[99] sticky max-w-full gap-5 ${className}`}
       style={headerStyle}
     >
       <div
@@ -263,7 +263,6 @@ const Header: NextPage<HeaderType> = ({
         getAQuoteDisplay="inline-block"
       />
       </nav>
-
       <div className="hidden lg:block justify-end">
         <button
           onClick={toggleMenu}
