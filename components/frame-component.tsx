@@ -33,10 +33,10 @@ const FrameComponent: NextPage<FrameComponentType> = ({ className = "" }) => {
       <div className="w-[1103px] flex flex-row flex-wrap items-center justify-center py-0 pl-0 pr-0.5 box-border gap-x-10 gap-y-[38px] max-w-full text-17xl text-variant-background gap-[19px]">
         <div className="flex-1 overflow-hidden flex flex-col items-start justify-start gap-[45px] min-w-[335px] max-w-full">
           <div className="w-[511px] flex flex-col items-start justify-start py-0 pl-0 pr-4 box-border gap-3.5 max-w-full">
-            <h1 className="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[120%] font-bold font-inherit mq800:text-10xl mq800:leading-[35px] mq450:text-3xl mq450:leading-[26px]">
+            <h2 className="m-0 self-stretch relative text-inherit tracking-[-0.02em] leading-[120%] font-bold font-inherit mq800:text-10xl mq800:leading-[35px] mq450:text-3xl mq450:leading-[26px]">
               Welcome to our Products Packages Page
-            </h1>
-            <h3 className="m-0 self-stretch relative text-5xl leading-[120%] text-text font-inherit mq450:text-lgi mq450:leading-[23px]">
+            </h2>
+            <h4 className="m-0 self-stretch relative text-5xl leading-[120%] text-text font-inherit mq450:text-lgi mq450:leading-[23px]">
               <p className="m-0">{`We offer a variety of services to help you establish and grow your online presence. Our pricing is designed to be flexible, with discounts available when you choose multiple services. `}</p>
               <p className="m-0">
                 Join our membership club for a minimum of two years to get the
@@ -44,7 +44,7 @@ const FrameComponent: NextPage<FrameComponentType> = ({ className = "" }) => {
               </p>
               <p className="m-0">&nbsp;</p>
               <p className="m-0">&nbsp;</p>
-            </h3>
+            </h4>
           </div>
           <div className="[border:none] bg-goldenrod h-[135px] w-auto [outline:none] self-stretch flex flex-col items-start justify-start font-heading-2 font-bold text-7xl text-primary rounded">
             {`Special Offer:

@@ -233,6 +233,18 @@ const Footer: NextPage<FooterType> = ({
     router.push("/knowledge-base");
   }, [router]);
 
+  const onHomeTextClick = useCallback(() => {
+    router.push("/");
+  }, [router]);
+
+  const onAboutUsTextClick = useCallback(() => {
+    router.push("/about-us");
+  }, [router]);
+
+  const onProductsTextClick = useCallback(() => {
+    router.push("/products");
+  }, [router]);
+
   const onDataPrivacyTextClick = useCallback(() => {
     router.push("/data-privacy");
   }, [router]);
@@ -251,7 +263,7 @@ const Footer: NextPage<FooterType> = ({
       style={footerStyle}
     >
       <div
-        className="w-[1177px] flex flex-col items-start justify-center gap-12 max-w-full gap-6"
+        className="flex flex-col items-start justify-center gap-12 max-w-full"
         style={container1Style}
       >
         <div
@@ -288,9 +300,50 @@ const Footer: NextPage<FooterType> = ({
               </div>
             </div>
           </div>
-          <div className="flex flex-row flex-wrap items-start justify-center gap-x-[71px] gap-y-[69.7px] max-w-full text-mid gap-[35px] gap-[17px]">
+          <div className="flex flex-row flex-wrap items-start justify-center max-w-full text-mid gap-12">
+            <div className="flex flex-col items-start justify-start gap-8">
+              <div
+                className="relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[36px]"
+                style={heading3Style}
+              >
+                Company
+              </div>
+              <div className="flex flex-col items-start justify-start gap-4 text-base text-gray-1">
+                <div
+                  className="relative tracking-[-0.03em] leading-[26px] font-medium inline-block min-w-[117px] cursor-pointer"
+                  onClick={onHomeTextClick}
+                  style={knowledgeBaseStyle}
+                >
+                  Home
+                </div>
+                <div
+                  className="relative tracking-[-0.03em] leading-[26px] font-medium inline-block min-w-[90px] cursor-pointer"
+                  onClick={onAboutUsTextClick}
+                  style={dataPrivacyStyle}
+                >
+                  About Us
+                </div>
+                <div
+                  className="relative tracking-[-0.03em] leading-[26px] font-medium inline-block min-w-[30px] cursor-pointer"
+                  onClick={onProductsTextClick}
+                  style={fAQStyle}
+                >
+                  Product
+                </div>
+                <div
+                  className="relative tracking-[-0.03em] leading-[26px] font-medium inline-block min-w-[30px] cursor-pointer"
+                  onClick={onFAQTextClick}
+                  style={fAQStyle}
+                >
+                  Help
+                </div>
+              </div>
+            </div>
             <div className="w-[162px] flex flex-col items-start justify-start gap-[29px]">
-              <div className="self-stretch relative tracking-[-0.03em] leading-[100%] font-medium">
+              <div
+                className="self-stretch relative tracking-[-0.03em] leading-[100%] font-medium cursor-pointer"
+                onClick={onProductsTextClick}
+              >
                 Products
               </div>
               <div
@@ -298,18 +351,26 @@ const Footer: NextPage<FooterType> = ({
                 style={navigationStyle}
               >
                 <div
-                  className="relative tracking-[-0.03em] leading-[26px] font-medium inline-block min-w-[111px]"
+                  className="relative tracking-[-0.03em] leading-[26px] font-medium inline-block min-w-[111px] cursor-pointer"
+                  onClick={onProductsTextClick}
                   style={phoneSystemsStyle}
                 >
                   Phone Systems
                 </div>
-                <div className="relative tracking-[-0.03em] leading-[26px] font-medium">{`Web Design & Hosting`}</div>
-                <div className="relative tracking-[-0.03em] leading-[26px] font-medium">
+                <div
+                  className="relative tracking-[-0.03em] leading-[26px] font-medium cursor-pointer"
+                  onClick={onProductsTextClick}
+                >{`Web Design & Hosting`}</div>
+                <div
+                  className="relative tracking-[-0.03em] leading-[26px] font-medium cursor-pointer"
+                  onClick={onProductsTextClick}
+                >
                   AI Integrated Systems
                 </div>
                 <div
-                  className="relative tracking-[-0.03em] leading-[26px] font-medium inline-block min-w-[100px]"
+                  className="relative tracking-[-0.03em] leading-[26px] font-medium inline-block min-w-[100px] cursor-pointer"
                   style={salesSupportStyle}
+                  onClick={onProductsTextClick}
                 >
                   Sales Support
                 </div>
@@ -317,28 +378,40 @@ const Footer: NextPage<FooterType> = ({
             </div>
             <div className="flex flex-col items-start justify-start gap-4 text-base text-gray-1">
               <div
-                className="relative tracking-[-0.03em] leading-[26px] font-medium inline-block min-w-[113px]"
+                className="relative tracking-[-0.03em] leading-[26px] font-medium inline-block min-w-[113px] cursor-pointer"
+                onClick={onProductsTextClick}
                 style={companyEmailStyle}
               >
                 Company Email
               </div>
               <div
-                className="relative tracking-[-0.03em] leading-[26px] font-medium inline-block min-w-[91px]"
+                className="relative tracking-[-0.03em] leading-[26px] font-medium inline-block min-w-[91px] cursor-pointer"
                 style={socialMediaStyle}
+                onClick={onProductsTextClick}
               >
                 Social Media
               </div>
-              <div className="relative tracking-[-0.03em] leading-[26px] font-medium">
+              <div
+                className="relative tracking-[-0.03em] leading-[26px] font-medium cursor-pointer"
+                onClick={onProductsTextClick}
+              >
                 Phone Transcription
               </div>
-              <div className="relative tracking-[-0.03em] leading-[26px] font-medium">
+              <div
+                className="relative tracking-[-0.03em] leading-[26px] font-medium cursor-pointer"
+                onClick={onProductsTextClick}
+              >
                 Google Ads Support
               </div>
-              <div className="relative tracking-[-0.03em] leading-[26px] font-medium">{`Marketing Strategies `}</div>
+              <div
+                className="relative tracking-[-0.03em] leading-[26px] font-medium  cursor-pointer"
+                onClick={onProductsTextClick}
+              >{`Marketing Strategies `}</div>
             </div>
             <div className="flex flex-col items-start justify-start gap-8">
               <div
-                className="relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[36px]"
+                className="relative tracking-[-0.03em] leading-[100%] font-medium inline-block min-w-[36px] cursor-pointer"
+                onClick={onFAQTextClick}
                 style={heading3Style}
               >
                 Help

@@ -9,6 +9,14 @@ const OurMission: NextPage<OurMissionType> = ({ className = "" }) => {
     <section
       className={`self-stretch bg-white overflow-hidden flex flex-row items-center justify-between py-7 px-[138px] box-border max-w-full gap-5 text-left text-mid text-secondary font-heading-2 lg:pt-5 lg:pb-5 lg:box-border mq825:pl-[34px] mq825:pr-[34px] mq825:box-border mq1400:flex-wrap mq1400:justify-center mq1400:pl-[69px] mq1400:pr-[69px] mq1400:box-border ${className}`}
     >
+      <div className="h-[716px] w-[520px] rounded-3xs bg-secondary overflow-hidden shrink-0 flex flex-col items-start justify-start min-w-[520px] max-w-full lg:min-w-full mq1400:flex-1">
+        <img
+          className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover mq1400:self-stretch mq1400:w-auto"
+          loading="lazy"
+          alt=""
+          src="/image12.png"
+        />
+      </div>
       <div className="w-[580px] flex flex-col items-start justify-start gap-[90px] min-w-[580px] max-w-full lg:min-w-full gap-[45px] gap-[22px] mq1400:flex-1">
         <div className="self-stretch flex flex-col items-start justify-start py-0 px-0 box-border gap-3.5 max-w-full">
           <div className="relative tracking-[0.15em] leading-[120%] uppercase font-medium">
@@ -66,14 +74,6 @@ const OurMission: NextPage<OurMissionType> = ({ className = "" }) => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="h-[716px] w-[520px] rounded-3xs bg-secondary overflow-hidden shrink-0 flex flex-col items-start justify-start min-w-[520px] max-w-full lg:min-w-full mq1400:flex-1">
-        <img
-          className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover mq1400:self-stretch mq1400:w-auto"
-          loading="lazy"
-          alt=""
-          src="/individualsholdingsmallumbrellasandmodelhome20231127052253utc-1@2x.png"
-        />
       </div>
     </section>
   );

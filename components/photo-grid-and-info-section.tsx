@@ -250,6 +250,45 @@ const PhotoGridAndInfoSection: NextPage<PhotoGridAndInfoSectionType> = ({
           style={frameDiv5Style}
         >
           <div
+            className="flex-1 flex flex-col items-start justify-start gap-[30px] min-w-[378px] max-w-full text-mid text-secondary mq825:min-w-full"
+            style={informationSectionStyle}
+          >
+            <div
+              className="w-[516px] flex flex-col items-start justify-start gap-3.5 max-w-full"
+              style={title2Style}
+            >
+              <div
+                className="relative tracking-[0.15em] leading-[120%] uppercase font-medium whitespace-nowrap"
+                style={allInOneBusinessSolutionsStyle}
+              >
+                {allInOneBusinessSolutions}
+              </div>
+              <h1
+                className="m-0 self-stretch relative text-29xl leading-[120%] font-bold font-inherit text-primary mq825:text-19xl mq825:leading-[46px] mq450:text-10xl mq450:leading-[35px]"
+                style={unleashThePowerStyle}
+              >
+                {unleashThePowerOfTechnolo}
+              </h1>
+            </div>
+            <div className="self-stretch flex flex-col items-start justify-start gap-3.5 max-w-full text-5xl text-variant-background">
+              {!whyChooseKisstech && (
+                <b
+                  className="w-[346px] relative leading-[120%] max-w-full mq450:text-lgi mq450:leading-[23px]"
+                  style={whyChooseKisstechStyle}
+                >
+                  All-in-One Business Solutions
+                </b>
+              )}
+              <div
+                className="self-stretch relative text-lg tracking-[-0.03em] leading-[160%] text-text"
+                style={text4Style}
+              >
+                {text}
+              </div>
+            </div>
+            <Button url={url} getAQuote={getAQuote} />
+          </div>
+          <div
             className="w-[279.4px] flex flex-col items-start justify-start gap-[27px] min-w-[279.4px] lg:flex-1"
             style={photoSectionStyle}
           >
@@ -292,45 +331,6 @@ const PhotoGridAndInfoSection: NextPage<PhotoGridAndInfoSectionType> = ({
               <p className="m-0">Say Goodbye to Scams,</p>
               <p className="m-0">Say Hello to Smart Business Solutions</p>
             </b>
-          </div>
-          <div
-            className="flex-1 flex flex-col items-start justify-start gap-[30px] min-w-[378px] max-w-full text-mid text-secondary mq825:min-w-full"
-            style={informationSectionStyle}
-          >
-            <div
-              className="w-[516px] flex flex-col items-start justify-start gap-3.5 max-w-full"
-              style={title2Style}
-            >
-              <div
-                className="relative tracking-[0.15em] leading-[120%] uppercase font-medium whitespace-nowrap"
-                style={allInOneBusinessSolutionsStyle}
-              >
-                {allInOneBusinessSolutions}
-              </div>
-              <h1
-                className="m-0 self-stretch relative text-29xl leading-[120%] font-bold font-inherit text-primary mq825:text-19xl mq825:leading-[46px] mq450:text-10xl mq450:leading-[35px]"
-                style={unleashThePowerStyle}
-              >
-                {unleashThePowerOfTechnolo}
-              </h1>
-            </div>
-            <div className="self-stretch flex flex-col items-start justify-start gap-3.5 max-w-full text-5xl text-variant-background">
-              {!whyChooseKisstech && (
-                <b
-                  className="w-[346px] relative leading-[120%] max-w-full mq450:text-lgi mq450:leading-[23px]"
-                  style={whyChooseKisstechStyle}
-                >
-                  All-in-One Business Solutions
-                </b>
-              )}
-              <div
-                className="self-stretch relative text-lg tracking-[-0.03em] leading-[160%] text-text"
-                style={text4Style}
-              >
-                {text}
-              </div>
-            </div>
-            <Button url={url} getAQuote={getAQuote} />
           </div>
         </div>
         <div className="h-0 w-[1140px] flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border max-w-full">

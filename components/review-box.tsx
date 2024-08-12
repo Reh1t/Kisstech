@@ -24,7 +24,7 @@ const ReviewBox: NextPage<ReviewBoxType> = ({
 
   return (
     <div
-      className={`flex-1 rounded-3xs bg-white border-border-1 border-[1px] border-solid box-border overflow-hidden flex flex-col items-start justify-start py-5 px-[29px] gap-[23px] min-w-[146px] max-w-full text-left text-sm text-primary font-heading-2 ${className}`}
+      className={`flex-1 rounded-3xs bg-white border-border-1 border-[1px] border-solid box-border overflow-hidden flex flex-col items-start justify-start py-5 px-[29px] gap-[23px] min-w-[300px] max-w-full text-left text-sm text-primary font-heading-2 ${className}`}
     >
       <div className="flex flex-row items-center justify-start">
         <div className="flex flex-col items-start justify-start gap-1">

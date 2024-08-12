@@ -8,9 +8,9 @@ export type OurStoryType = {
 const OurStory: NextPage<OurStoryType> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch bg-variant-background overflow-hidden flex flex-col items-center justify-start py-[81px] px-0 box-border gap-[55px] max-w-full text-left text-mid text-border-1 font-heading-2 gap-[27px] mq825:pt-[53px] mq825:pb-[53px] mq825:box-border mq450:pt-[34px] mq450:pb-[34px] mq450:box-border ${className}`}
+      className={`self-stretch bg-variant-background overflow-hidden flex flex-col items-center justify-start py-[81px] px-0 box-border gap-[55px] max-w-full text-left text-mid text-border-1 font-heading-2 mq825:pt-[53px] mq825:pb-[53px] mq825:box-border mq450:pt-[34px] mq450:pb-[34px] mq450:box-border ${className}`}
     >
-      <div className="w-[850px] flex flex-row flex-wrap items-center justify-start py-0 px-5 box-border gap-10 max-w-full gap-5">
+      <div className="w-[850px] flex flex-row flex-wrap items-center justify-start py-0 px-5 box-border gap-10 max-w-full ">
         <div className="h-px w-[291px] relative border-border-2 border-t-[1px] border-solid box-border" />
         <div className="flex-1 flex flex-col items-start justify-start gap-3.5 min-w-[312px] max-w-full">
           <div className="relative tracking-[0.15em] leading-[120%] uppercase font-medium inline-block min-w-[115px]">
@@ -21,11 +21,12 @@ const OurStory: NextPage<OurStoryType> = ({ className = "" }) => {
           </h1>
         </div>
       </div>
-      <div className="self-stretch grid flex-row items-center justify-center py-0 px-[150px] box-border gap-[30px] max-w-full grid-cols-[repeat(3,_minmax(270px,_1fr))] text-xl text-white lg:justify-center lg:grid-cols-[repeat(2,_minmax(270px,_468px))] gap-[15px] mq825:pl-[75px] mq825:pr-[75px] mq825:box-border mq825:grid-cols-[minmax(270px,_1fr)] mq450:pl-5 mq450:pr-5 mq450:box-border">
+      <div className="self-stretch grid flex-row items-center justify-center py-0 px-[150px] box-border gap-[30px] max-w-full grid-cols-[repeat(3,_minmax(270px,_1fr))] text-xl text-white lg:justify-center lg:grid-cols-[repeat(2,_minmax(270px,_468px))] mq825:pl-[75px] mq825:pr-[75px] mq825:box-border mq825:grid-cols-[minmax(270px,_1fr)] mq450:pl-5 mq450:pr-5 mq450:box-border">
         <VideoBox
           realEstateAgentsExplainMo="/realestateagentsexplainmodelsofhousingestat20231127045215utc-1@2x.png"
           foundingVision="Founding Vision"
           propColor="#fff"
+          colr="bg-slate-800"
         />
         <VideoBox
           realEstateAgentsExplainMo="/realestateagentsexplainmodelsofhousingestat20231127045215utc-1-1@2x.png"
@@ -35,6 +36,7 @@ const OurStory: NextPage<OurStoryType> = ({ className = "" }) => {
         <VideoBox
           realEstateAgentsExplainMo="/realestateagentsexplainmodelsofhousingestat20231127045215utc-1-2@2x.png"
           foundingVision="Adaptation to Change"
+          colr="bg-red-600"
         />
       </div>
       <div className="w-[602px] flex flex-row items-center justify-center p-2.5 box-border max-w-full text-center text-lg text-gray-1">

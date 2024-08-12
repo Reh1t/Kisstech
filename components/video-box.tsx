@@ -5,6 +5,7 @@ export type VideoBoxType = {
   className?: string;
   realEstateAgentsExplainMo?: string;
   foundingVision?: string;
+  colr?: string;
 
   /** Style props */
   propColor?: CSSProperties["color"];
@@ -15,6 +16,7 @@ const VideoBox: NextPage<VideoBoxType> = ({
   realEstateAgentsExplainMo,
   foundingVision,
   propColor,
+  colr
 }) => {
   const foundingVisionStyle: CSSProperties = useMemo(() => {
     return {
@@ -24,10 +26,10 @@ const VideoBox: NextPage<VideoBoxType> = ({
 
   return (
     <div
-      className={`h-60 rounded-3xs bg-secondary overflow-hidden flex flex-col items-start justify-start relative gap-2.5 max-w-full text-left text-xl text-white font-heading-2 ${className}`}
+      className={`rounded-3xs ${colr} overflow flex flex-col items-start justify-start relative gap-2.5 max-w-full text-left text-xl text-white font-heading-2 ${className}`}
     >
       <img
-        className="self-stretch h-[289px] relative max-w-full overflow-hidden shrink-0 object-cover"
+        className="relative max-w-full overflow-hidden shrink-0 object-cover"
         alt=""
         src={realEstateAgentsExplainMo}
       />

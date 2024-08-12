@@ -73,28 +73,13 @@ const Home: NextPage = () => {
           <div className="w-[1272px] flex flex-row items-start justify-center py-0 px-[27px] box-border gap-[97px] max-w-full gap-12 mq1050:flex-wrap gap-6">
             <div className="w-[537.4px] flex flex-col items-start justify-start gap-[27px] min-w-[537.4px] max-w-full mq750:min-w-full mq1050:flex-1">
               <div className="self-stretch flex flex-row items-center justify-start gap-px mq750:flex-wrap">
-                <div className="flex-1 flex flex-row items-center justify-start p-2.5 box-border min-w-[181px]">
                   <img
                     className="h-[388px] flex-1 relative rounded-3xs max-w-full overflow-hidden object-cover"
                     loading="lazy"
                     alt=""
-                    src="/beachhappyandportraitofabigfamilyonavac20231127050445utc-1@2x.png"
-                  />
-                </div>
-                <div className="h-[391px] w-[257px] flex flex-col items-start justify-start gap-5 min-w-[257px] mq750:flex-1">
-                  <img
-                    className="self-stretch flex-1 relative rounded-3xs max-w-full overflow-hidden max-h-full object-cover"
-                    loading="lazy"
-                    alt=""
-                    src="/herattitudeshinesthroughtherain20240228150752utc-1@2x.png"
-                  />
-                  <img
-                    className="self-stretch flex-1 relative rounded-3xs max-w-full overflow-hidden max-h-full object-cover"
-                    loading="lazy"
-                    alt=""
                     src="/image-3@2x.png"
                   />
-                </div>
+                
               </div>
               <h3 className="m-0 h-[58px] relative text-inherit leading-[120%] font-bold font-inherit inline-block max-w-full mq450:text-lgi mq450:leading-[23px]">
                 <p className="m-0">Say Goodbye to Scams,</p>
@@ -170,7 +155,7 @@ const Home: NextPage = () => {
             </h1>
           </div>
           <div className="w-[1240px] flex flex-row flex-wrap items-center justify-center py-0 px-[50px] box-border gap-x-[60px] gap-y-[5px] min-h-[825px] max-w-full text-13xl text-primary lg:pl-[25px] lg:pr-[25px] lg:box-border">
-            <div className="w-[1140px] flex flex-row flex-wrap items-center justify-center gap-x-[30px] gap-y-9 min-h-[728px] max-w-full gap-[18px]">
+            <div className="w-[1140px] flex flex-row flex-wrap items-start justify-center gap-x-[30px] gap-y-9 min-h-[728px] max-w-full gap-[18px]">
               <ServiceCard
                 heading={`Web Design & Hosting`}
                 propDisplay="inline-block"

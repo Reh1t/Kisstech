@@ -8,10 +8,10 @@ export type WhyUs1Type = {
 const WhyUs1: NextPage<WhyUs1Type> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch bg-variant-background overflow-hidden flex flex-row flex-wrap items-start justify-center py-[67px] pl-[159px] pr-[161px] box-border gap-x-[120px] gap-y-[118px] max-w-full text-left text-mid text-border-1 font-heading-2 gap-[59px] lg:pl-[79px] lg:pr-20 lg:box-border gap-[29px] mq750:py-[29px] mq750:pl-[39px] mq750:pr-10 mq750:box-border mq1050:pt-11 mq1050:pb-11 mq1050:box-border ${className}`}
+      className={`self-stretch bg-variant-background overflow-hidden flex flex-row flex-wrap items-start justify-center py-[67px] pl-[159px] pr-[161px] box-border gap-x-[120px] gap-y-[118px] max-w-full text-left text-mid text-border-1 font-heading-2 gap-[59px] lg:pl-[79px] lg:pr-20 lg:box-border mq750:py-[29px] mq750:pl-[39px] mq750:pr-10 mq750:box-border mq1050:pt-11 mq1050:pb-11 mq1050:box-border ${className}`}
     >
       <div className="flex-1 flex flex-col items-start justify-start pt-[22px] px-0 pb-0 box-border min-w-[335px] max-w-full">
-        <div className="self-stretch flex flex-col items-start justify-start gap-[60px] max-w-full gap-[30px]">
+        <div className="self-stretch flex flex-col items-start justify-start gap-[60px] max-w-full">
           <div className="self-stretch flex flex-col items-start justify-start gap-5 max-w-full">
             <div className="flex flex-row items-start justify-start">
               <div className="relative tracking-[0.15em] leading-[120%] uppercase font-medium">
@@ -39,31 +39,25 @@ const WhyUs1: NextPage<WhyUs1Type> = ({ className = "" }) => {
               textWidth="unset"
               textDisplay="unset"
               textAlignSelf="stretch"
+              image="/gear.png"
             />
-            <div className="self-stretch flex flex-row items-start justify-start gap-[30px] max-w-full mq750:flex-wrap">
-              <div className="h-[92px] w-20 relative rounded-8xs bg-primary overflow-hidden shrink-0">
-                <img
-                  className="absolute top-[calc(50%_-_12px)] left-[calc(50%_-_12px)] w-6 h-6 overflow-hidden"
-                  alt=""
-                  src="/zap.svg"
-                />
-              </div>
-              <div className="flex-1 flex flex-col items-start justify-start gap-2.5 min-w-[247px] max-w-full">
-                <h3 className="m-0 self-stretch relative text-inherit leading-[120%] font-bold font-inherit mq450:text-lgi mq450:leading-[23px]">
-                  Innovate: Comprehensive Coverage
-                </h3>
-                <div className="self-stretch relative text-base tracking-[-0.03em] leading-[160%] font-medium text-gray-1">
-                  <p className="m-0">
-                    Stay ahead with cutting-edge technology solutions tailored
-                    to elevate your business.
-                  </p>
-                  <p className="m-0">
-                    Foster creativity and adapt to the latest advancements in
-                    the digital landscape.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <IconBox
+              propHeight="unset"
+              costEffectiveSolutions="Innovate: Comprehensive Coverage"
+              text="Stay ahead with cutting-edge technology solutions tailored
+                    to elevate your business.Foster creativity and adapt to the latest advancements in
+                    the digital landscape."
+              propColor="#9f9f9f"
+              iconBox1AlignSelf="stretch"
+              iconBox1Padding="unset"
+              titleWidth="unset"
+              costEffectiveSolutionsMargin="0"
+              costEffectiveSolutionsFontWeight="700"
+              textWidth="unset"
+              textDisplay="unset"
+              textAlignSelf="stretch"
+              image="/gear.png"
+            />
             <IconBox
               propHeight="unset"
               costEffectiveSolutions="Thrive: Customer-Centric Approach"
@@ -77,16 +71,18 @@ const WhyUs1: NextPage<WhyUs1Type> = ({ className = "" }) => {
               textWidth="unset"
               textDisplay="unset"
               textAlignSelf="stretch"
+              image="/gear.png"
             />
           </div>
         </div>
       </div>
-      <div className="h-[888px] w-[486px] flex flex-row items-center max-w-full">
+      <div className="h-auto w-auto flex flex-row items-center max-w-full">
         <img
-          className="relative top-[0px] left-[0px] w-[486px] h-[555px] object-cover items-center rounded-3xl"
+          className="relative top-[0px] left-[0px] w-[450px] h-[700px] min-w-[324px] min-h-[400px] object-cover items-center rounded-3xl"
           alt=""
-          src="/individualsholdingsmallumbrellasandmodelhome20231127045620utc-1@2x.png"/>
-        </div>
+          src="/network.gif"
+        />
+      </div>
     </section>
   );
 };

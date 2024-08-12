@@ -82,9 +82,9 @@ const ServiceDetailLeft: NextPage<ServiceDetailLeftType> = ({
         </div>
         <Button1 />
       </div>
-      <div className="h-[338px] w-[482px] rounded-xl bg-secondary overflow-hidden shrink-0 flex flex-col items-start justify-start min-w-[482px] max-w-full lg:min-w-full mq1425:flex-1">
+      <div className="h-[338px] w-[482px] rounded-xl bg-secondary overflow-hidden shrink-0 flex flex-col items-center justify-center min-w-[482px] max-w-full lg:min-w-full mq1425:flex-1">
         <img
-          className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover mq1425:self-stretch mq1425:w-auto"
+          className="flex-1 relative max-w-full overflow-hidden max-h-full object-cover mq1425:self-stretch mq1425:w-auto"
           alt=""
           src={grandparentsParentsOrPort}
         />

@@ -15,7 +15,7 @@ const ServiceDetailRight: NextPage<ServiceDetailRightType> = ({
         <img
           className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover lg:self-stretch lg:w-auto"
           alt=""
-          src="/grandparentsparentsorportraitofhappychildre20231127052659utc-1-1@2x.png"
+          src="/image 6.png"
         />
       </div>
       <div className="flex-1 flex flex-col items-center justify-start min-w-[361px] max-w-full mq825:min-w-full">

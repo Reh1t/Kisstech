@@ -19,16 +19,16 @@ const Services: NextPage<ServicesType> = ({ className = "" }) => {
       className={`self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-start justify-center py-20 px-5 box-border max-w-full text-left text-mid text-secondary font-heading-2 mq800:pt-[34px] mq800:pb-[34px] mq800:box-border mq1350:pt-[52px] mq1350:pb-[52px] mq1350:box-border ${className}`}
     >
       <div className="w-[1240px] flex flex-row flex-wrap items-start justify-start gap-[60px] min-h-[1052px] max-w-full">
-        <div className="w-[518px] flex flex-row flex-wrap items-start justify-start py-0 px-0 box-border min-h-[78px] max-w-full">
+        <div className="flex flex-row flex-wrap items-start justify-start py-0 px-0 box-border min-h-[78px] max-w-full">
           <div className="relative tracking-[0.15em] leading-[120%] uppercase font-medium shrink-0">
             Our Services
           </div>
-          <h1 className="m-0 h-auto w-[1120px] relative text-29xl leading-[120%] font-bold font-inherit text-primary inline-block max-w-full shrink-0 mq800:text-19xl mq800:leading-[46px] mq450:text-10xl mq450:leading-[35px]">
+          <h1 className="m-0 h-auto relative text-29xl leading-[120%] font-bold font-inherit text-primary inline-block max-w-full shrink-0 mq800:text-19xl mq800:leading-[46px] mq450:text-10xl mq450:leading-[35px]">
             Our Range of Comprehensive Business Solutions
           </h1>
         </div>
         <div className="flex flex-row flex-wrap items-center justify-center py-0 px-[50px] box-border gap-x-[60px] gap-y-[5px] max-w-full text-13xl text-primary mq1350:pl-[25px] mq1350:pr-[25px] mq1350:box-border">
-          <div className="w-[1140px] flex flex-row flex-wrap items-center justify-center gap-x-[30px] gap-y-9 min-h-[914px] max-w-full gap-[18px]">
+          <div className="w-[1140px] flex flex-row flex-wrap items-start justify-center gap-x-[30px] gap-y-9 min-h-[914px] max-w-full gap-[18px]">
             <ServiceCard
               heading={`Web Design & Hosting`}
               propDisplay="inline-block"

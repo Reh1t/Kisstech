@@ -5,6 +5,8 @@ export type IconBoxType = {
   className?: string;
   costEffectiveSolutions?: string;
   text?: string;
+  image?: string;
+
 
   /** Style props */
   propHeight?: CSSProperties["height"];
@@ -17,6 +19,7 @@ export type IconBoxType = {
   textWidth?: CSSProperties["width"];
   textDisplay?: CSSProperties["display"];
   textAlignSelf?: CSSProperties["alignSelf"];
+
 };
 
 const IconBox: NextPage<IconBoxType> = ({
@@ -33,6 +36,7 @@ const IconBox: NextPage<IconBoxType> = ({
   textWidth,
   textDisplay,
   textAlignSelf,
+  image
 }) => {
   const iconBox1Style: CSSProperties = useMemo(() => {
     return {
@@ -74,7 +78,7 @@ const IconBox: NextPage<IconBoxType> = ({
           className="absolute top-[calc(50%_-_12px)] left-[calc(50%_-_12px)] w-6 h-6 overflow-hidden"
           loading="lazy"
           alt=""
-          src="/zap.svg"
+          src={image}
         />
       </div>
       <div

@@ -44,7 +44,7 @@ const AboutUs: NextPage = () => {
         propWidth="537.4px"
         propMinWidth="537.4px"
         propMinWidth1="181px"
-        beachHappyAndPortraitOfAB="/beachhappyandportraitofabigfamilyonavac20231127050445utc-1@2x.png"
+        beachHappyAndPortraitOfAB="/individualsholdingsmallumbrellasandmodelhome20231127052253utc-1@2x.png"
         frameDiv
         propMinWidth2="257px"
         herAttitudeShinesThroughT="/herattitudeshinesthroughtherain20240228150752utc-1@2x.png"

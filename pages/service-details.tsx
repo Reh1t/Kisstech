@@ -73,7 +73,7 @@ const ServiceDetails: NextPage = () => {
       <ServiceDetailLeft
         digitalMarketingServices="Digital Marketing Services"
         text="We understand that marketing and sales support are crucial for small businesses to gain visibility and attract customers. However,  we also know that many existing services overcharge without delivering commensurate value. Here’s how our approach aims to provide cost-effective and impactful marketing solutions."
-        grandparentsParentsOrPort="/grandparentsparentsorportraitofhappychildre20231127052659utc-1@2x.png"
+        grandparentsParentsOrPort="/image 2.png"
       />
       <section className="self-stretch bg-white overflow-hidden flex flex-row items-center justify-between py-0 px-[150px] box-border max-w-full gap-[18px] text-left text-lg text-text font-heading-2 mq825:pl-[75px] mq825:pr-[75px] mq825:box-border mq450:pl-5 mq450:pr-5 mq450:box-border mq1425:flex-wrap">
         <div className="w-[640px] flex flex-col items-start justify-start py-0 pl-0 pr-5 box-border min-w-[640px] max-w-full lg:min-w-full mq1425:flex-1 mq1425:pr-0 mq1425:box-border">
@@ -103,7 +103,7 @@ const ServiceDetails: NextPage = () => {
           <img
             className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover mq1425:self-stretch mq1425:w-auto"
             alt=""
-            src="/grandparentsparentsorportraitofhappychildre20231127052659utc-1-1@2x.png"
+            src="/image 3.png"
           />
         </div>
         <div className="w-[531px] flex flex-col items-center justify-start min-w-[531px] max-w-full lg:min-w-full mq1425:flex-1">
@@ -213,7 +213,7 @@ const ServiceDetails: NextPage = () => {
           <img
             className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover mq1425:self-stretch mq1425:w-auto"
             alt=""
-            src="/grandparentsparentsorportraitofhappychildre20231127052659utc-1-2@2x.png"
+            src="/image 4.png"
           />
         </div>
       </section>
@@ -224,7 +224,7 @@ const ServiceDetails: NextPage = () => {
       <ServiceDetailLeft
         digitalMarketingServices="Overview of Ai Adoption"
         text="Artificial Intelligence (AI) is a rapidly evolving field, with improvements and advancements occurring daily. While AI's adoption is widespread in larger corporations, it also offers significant benefits for small businesses and sole proprietors. and it can greatly enhance daily operations and introduce efficiencies."
-        grandparentsParentsOrPort="/grandparentsparentsorportraitofhappychildre20231127052659utc-1-3@2x.png"
+        grandparentsParentsOrPort="/image 5.png"
       />
       <ServiceDetailRight />
       <section className="self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-start justify-center py-20 px-5 box-border max-w-full text-left text-mid text-secondary font-heading-2 lg:pt-[52px] lg:pb-[52px] lg:box-border mq450:pt-[34px] mq450:pb-[34px] mq450:box-border">
@@ -238,7 +238,7 @@ const ServiceDetails: NextPage = () => {
             </h1>
           </div>
           <div className="w-[1240px] flex flex-row flex-wrap items-center justify-center py-0 px-[50px] box-border gap-x-[60px] gap-y-[5px] min-h-[551px] max-w-full text-13xl text-primary mq1425:pl-[25px] mq1425:pr-[25px] mq1425:box-border">
-            <div className="w-[1140px] flex flex-row flex-wrap items-center justify-center gap-x-[30px] gap-y-9 min-h-[454px] max-w-full gap-[18px]">
+            <div className="w-[1140px] flex flex-row flex-wrap items-start justify-center gap-x-[30px] gap-y-9 min-h-[454px] max-w-full gap-[18px]">
               <ServiceCard
                 heading="Company Email"
                 propDisplay="unset"
@@ -287,7 +287,7 @@ const ServiceDetails: NextPage = () => {
               <div className="rounded-3xs bg-main-background border-border-1 border-[1px] border-solid box-border overflow-hidden hidden flex-row items-center justify-center py-3 px-[49px] gap-9 max-w-full mq825:flex-wrap">
                 <div className="rounded-8xs bg-variant-background overflow-hidden flex flex-row items-center justify-start py-[34px] px-7">
                   <img
-                    className="h-5 w-[18px] relative"
+                    className="h-10 relative"
                     alt=""
                     src="/vector-11.svg"
                   />
@@ -308,9 +308,9 @@ const ServiceDetails: NextPage = () => {
               <div className="w-[550px] rounded-3xs bg-main-background border-border-1 border-[1px] border-solid box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-3 px-[49px] gap-9 max-w-full mq825:flex-wrap mq825:pl-6 mq825:pr-6 mq825:box-border">
                 <div className="rounded-8xs bg-variant-background overflow-hidden flex flex-row items-center justify-start py-[34px] px-7">
                   <img
-                    className="h-5 w-[18px] relative"
+                    className="h-10 relative"
                     alt=""
-                    src="/vector-11.svg"
+                    src="/star.png"
                   />
                 </div>
                 <div className="flex-1 flex flex-col items-start justify-start gap-2.5 min-w-[221px] max-w-full">
@@ -328,7 +328,7 @@ const ServiceDetails: NextPage = () => {
               <div className="rounded-3xs bg-main-background border-border-1 border-[1px] border-solid box-border overflow-hidden hidden flex-row items-center justify-center py-3 px-[49px] gap-9 max-w-full mq825:flex-wrap">
                 <div className="rounded-8xs bg-variant-background overflow-hidden flex flex-row items-center justify-start py-[34px] px-7">
                   <img
-                    className="h-5 w-[18px] relative"
+                    className="h-10 relative"
                     alt=""
                     src="/vector-11.svg"
                   />
@@ -388,7 +388,7 @@ const ServiceDetails: NextPage = () => {
           </div>
         </div>
       </section>
-      <section className="self-stretch overflow-hidden flex flex-col items-end justify-center py-[242px] px-[167px] box-border bg-[url('/3-review@3x.png')] bg-cover bg-no-repeat bg-[top] max-w-full text-left text-13xl text-border-1 font-heading-2 lg:pl-[83px] lg:pr-[83px] lg:box-border mq825:py-[157px] mq825:px-[41px] mq825:box-border mq450:pt-[102px] mq450:pb-[102px] mq450:box-border">
+      <section className="self-stretch overflow-hidden flex flex-col items-start justify-start py-[242px] px-[167px] box-border bg-[url('/123.png')] opacity-70 bg-cover bg-no-repeat bg-[top] max-w-full text-left text-13xl text-border-1 font-heading-2 lg:pl-[83px] lg:pr-[83px] lg:box-border mq825:py-[157px] mq825:px-[41px] mq825:box-border mq450:pt-[102px] mq450:pb-[102px] mq450:box-border">
         <div className="w-[640px] flex flex-col items-start justify-start max-w-full">
           <h1 className="m-0 self-stretch h-[304px] relative text-inherit tracking-[-0.02em] leading-[120%] inline-block font-inherit mq825:text-7xl mq825:leading-[31px] mq450:text-lgi mq450:leading-[23px]">
             <p className="m-0 text-main-background">

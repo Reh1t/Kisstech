@@ -12,10 +12,10 @@ const Body: NextPage<BodyType> = ({ className = "" }) => {
     >
       <div className="flex flex-row items-center justify-start py-0 pl-0 pr-5 gap-[9px] text-gray-200">
         <img
-          className="h-6 w-6 relative overflow-hidden shrink-0"
+          className="relative overflow-hidden shrink-0"
           loading="lazy"
           alt=""
-          src="/lock-icon.svg"
+          src="/arrow.png"
         />
         <div className="relative tracking-[0.15em] leading-[120%] uppercase font-medium">
           Welcome to kisstech

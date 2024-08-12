@@ -188,8 +188,9 @@ const Header: NextPage<HeaderType> = ({
         style={frameDivStyle}
       >
         <div
-          className="overflow-hidden flex flex-col items-start justify-start"
+          className="overflow-hidden cursor-pointer flex flex-col items-start justify-start"
           style={frameStyle}
+          onClick={onHomeClick}
         >
           <img
             className="w-auto relative"
@@ -199,8 +200,9 @@ const Header: NextPage<HeaderType> = ({
           />
         </div>
         <div
-          className="flex-1 overflow-hidden flex flex-col items-start justify-start"
+          className="flex-1 overflow-hidden cursor-pointer flex flex-col items-start justify-start"
           style={frame1Style}
+          onClick={onHomeClick}
         >
           <img
             className="self-stretch h-auto relative max-w-full overflow-hidden shrink-0"
@@ -211,7 +213,7 @@ const Header: NextPage<HeaderType> = ({
         </div>
       </div>
       <nav
-        className={`m-0 w-full flex lg:flex-col items-center justify-center gap-4 max-w-full text-left text-mid text-gray-1 font-heading-2 ${
+        className={`m-0 w-full flex lg:flex-col items-center justify-end gap-4 max-w-full text-left text-mid text-gray-1 font-heading-2 ${
           isMenuOpen ? "lg:flex" : "lg:hidden"
         }`}
       >
@@ -250,8 +252,6 @@ const Header: NextPage<HeaderType> = ({
         >
           Help
         </div>
-      </nav>
-
       <Button
         onButtonClick={onButtonClick}
         propPadding="15px 30px"
@@ -262,6 +262,8 @@ const Header: NextPage<HeaderType> = ({
         buttonBorder="none"
         getAQuoteDisplay="inline-block"
       />
+      </nav>
+
       <div className="hidden lg:block justify-end">
         <button
           onClick={toggleMenu}

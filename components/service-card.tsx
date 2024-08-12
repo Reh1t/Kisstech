@@ -73,7 +73,7 @@ const ServiceCard: NextPage<ServiceCardType> = ({
       style={serviceCardStyle}
     >
       <div className="rounded-8xs bg-variant-background overflow-hidden flex flex-row items-center justify-start py-[34px] px-7">
-        <img className="h-5 w-[18px] relative" alt="" src="/vector-11.svg" />
+        <img className="h-10 relative" alt="" src="/star.png" />
       </div>
       <div
         className="flex-1 flex flex-col items-start justify-start gap-2.5 min-w-[221px] max-w-full"

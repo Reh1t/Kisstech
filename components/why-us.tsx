@@ -24,15 +24,18 @@ const WhyUs: NextPage<WhyUsType> = ({ className = "" }) => {
             <IconBox
               costEffectiveSolutions="Cost-Effective Solutions"
               text="We offer competitive pricing that ensures you get the best value for your investment."
+              image="/gear.png"
             />
             <IconBox
               costEffectiveSolutions="Transparency"
               text="Trust is the foundation of our client relationships, built on transparency and reliability. "
+              image="/gear.png"
             />
             <IconBox
               costEffectiveSolutions={`Comprehensive Services
                 & Customization`}
               text="Trust is the foundation of our client relationships, built on transparency and reliability. "
+              image="/gear.png"
             />
             
           </div>
@@ -45,51 +48,6 @@ const WhyUs: NextPage<WhyUsType> = ({ className = "" }) => {
             alt=""
             src="/individualsholdingsmallumbrellasandmodelhome20231127045620utc-1@2x.png"
           />
-        </div>
-        <div className="!m-[0] absolute top-[180px] left-[-30px] shadow-[0px_20px_90px_rgba(0,_0,_0,_0.25)] rounded-tl-3xs rounded-tr-980xl rounded-br-980xl rounded-bl-3xs bg-white flex flex-row items-start justify-start py-2 px-2 gap-3 z-[1] w-[260px]">
-          <div className="flex flex-col items-start justify-start pt-[5px] px-0 pb-0 ml-2">
-            <b className="relative tracking-[-0.02em] leading-[120%] inline-block min-w-[70px] whitespace-nowrap mq800:text-7xl mq800:leading-[31px] mq450:text-lgi mq450:leading-[23px]">
-              <span>90</span>
-              <span className="text-border-1">%</span>
-            </b>
-          </div>
-          <div className="flex flex-col items-start justify-start gap-1 text-sm text-primary">
-            <div className="relative leading-[160%] font-medium">
-              Customer Satisfaction
-            </div>
-            <div className="flex flex-row items-start justify-start">
-              <img
-                className="h-[22px] w-[22px] relative min-h-[22px]"
-                loading="lazy"
-                alt=""
-                src="/star-1.svg"
-              />
-              <img
-                className="h-[22px] w-[22px] relative min-h-[22px]"
-                loading="lazy"
-                alt=""
-                src="/star-1.svg"
-              />
-              <img
-                className="h-[22px] w-[22px] relative min-h-[22px]"
-                loading="lazy"
-                alt=""
-                src="/star-1.svg"
-              />
-              <img
-                className="h-[22px] w-[22px] relative min-h-[22px]"
-                loading="lazy"
-                alt=""
-                src="/star-1.svg"
-              />
-              <img
-                className="h-[22px] w-[22px] relative min-h-[22px]"
-                loading="lazy"
-                alt=""
-                src="/star-1.svg"
-              />
-            </div>
-          </div>
         </div>
       </div>
     </section>
