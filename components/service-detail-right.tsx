@@ -23,7 +23,7 @@ const ServiceDetailRight: NextPage<ServiceDetailRightType> = ({
           <div className="self-stretch flex flex-row items-center justify-start gap-5 max-w-full mq825:flex-wrap">
             <div className="h-px w-[91px] relative border-border-2 border-t-[1px] border-solid box-border" />
             <h1 className="m-0 h-[43px] relative text-inherit tracking-[-0.02em] leading-[120%] font-bold font-inherit inline-block max-w-full mq825:text-10xl mq825:leading-[35px] mq450:text-3xl mq450:leading-[26px]">
-              Phone Transaction Service
+              Phone Transcription Service
             </h1>
           </div>
           <div className="self-stretch flex flex-col items-start justify-start text-lg text-text">

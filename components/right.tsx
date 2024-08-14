@@ -17,7 +17,7 @@ const Right: NextPage<RightType> = ({ className = "" }) => {
           src="/friendlyyoungafricanamericanpsychologistwith20231127051705utc-1@2x.png"
         />
       </div>
-      <div className="w-[321px] !m-[0] absolute top-[86px] right-[60px] rounded-3xs bg-accent overflow-hidden shrink-0 flex flex-row items-start justify-end max-w-full">
+      <div className="w-[450px] !m-[0] absolute top-[86px] right-[60px] rounded-3xs bg-accent overflow-hidden shrink-0 flex flex-row items-start justify-end max-w-full">
         <img
           className="h-[607.9px] flex-1 relative max-w-full overflow-hidden object-cover"
           loading="lazy"

@@ -27,7 +27,7 @@ const Body: NextPage<BodyType> = ({ className = "" }) => {
         </h1>
       </div>
       <div className="w-[504px] flex flex-row items-center justify-center py-0 pl-0 pr-5 box-border max-w-full text-base">
-        <div className="h-[338px] flex-1 relative tracking-[-0.03em] leading-[160%] font-medium inline-block max-w-full">
+        <div className="flex-1 relative tracking-[-0.03em] leading-[160%] font-medium inline-block max-w-full">
           <p className="m-0">
             Are you fed up with excessive fees for essential business services
             like websites and phone systems, with no transparency on what you're

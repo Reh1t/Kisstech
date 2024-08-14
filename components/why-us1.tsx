@@ -8,7 +8,7 @@ export type WhyUs1Type = {
 const WhyUs1: NextPage<WhyUs1Type> = ({ className = "" }) => {
   return (
     <section
-      className={`self-stretch bg-variant-background overflow-hidden flex flex-row flex-wrap items-start justify-center py-[67px] pl-[159px] pr-[161px] box-border gap-x-[120px] gap-y-[118px] max-w-full text-left text-mid text-border-1 font-heading-2 gap-[59px] lg:pl-[79px] lg:pr-20 lg:box-border mq750:py-[29px] mq750:pl-[39px] mq750:pr-10 mq750:box-border mq1050:pt-11 mq1050:pb-11 mq1050:box-border ${className}`}
+      className={`self-stretch bg-variant-background overflow-hidden flex flex-row flex-wrap items-center justify-center py-[67px] pl-[159px] pr-[161px] box-border gap-x-[120px] gap-y-[118px] max-w-full text-left text-mid text-border-1 font-heading-2 gap-[59px] lg:pl-[79px] lg:pr-20 lg:box-border mq750:py-[29px] mq750:pl-[39px] mq750:pr-10 mq750:box-border mq1050:pt-11 mq1050:pb-11 mq1050:box-border ${className}`}
     >
       <div className="flex-1 flex flex-col items-start justify-start pt-[22px] px-0 pb-0 box-border min-w-[335px] max-w-full">
         <div className="self-stretch flex flex-col items-start justify-start gap-[60px] max-w-full">
@@ -80,7 +80,7 @@ const WhyUs1: NextPage<WhyUs1Type> = ({ className = "" }) => {
         <img
           className="relative top-[0px] left-[0px] w-[450px] h-[700px] min-w-[324px] min-h-[400px] object-cover items-center rounded-3xl"
           alt=""
-          src="/network.gif"
+          src="/Networking.png"
         />
       </div>
     </section>
