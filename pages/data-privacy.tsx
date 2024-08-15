@@ -44,7 +44,7 @@ const DataPrivacy: NextPage = () => {
         </div>
         <div className="w-[602px] flex flex-row flex-wrap items-center justify-center p-2.5 box-border max-w-full text-lg text-text">
           <div className="flex-1 relative tracking-[-0.03em] leading-[160%] inline-block max-w-full">
-            n the digital era, safeguarding data privacy and ensuring secure
+            In the digital era, safeguarding data privacy and ensuring secure
             information storage are paramount, especially in Canada where
             privacy regulations are stringent and evolving. As data generation
             increases, from personal details to expansive business databases,
